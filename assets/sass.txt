@@ -1,1 +1,1 @@
-sass --watch G:\WbL\exdos\assets\scss\main.scss:G:\WbL\exdos\assets\css\style.css
+sass --watch G:\WbL\project-exdos\assets\scss\main.scss:G:\WbL\project-exdos\assets\css\style.css
