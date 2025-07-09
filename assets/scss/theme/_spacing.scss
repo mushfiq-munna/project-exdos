@@ -30,7 +30,7 @@
 }
 
 /*-- Padding Top --*/
-@for $i from 1 through 100 {
+@for $i from 1 through 150 {
   .pt-#{1 * $i} {
     padding-top: 1px * $i;
   }

@@ -1,1 +1,20 @@
-@use '../utils' as *;
+@use "../utils" as *;
+
+.tp-btn-sec {
+  background-color: var(--tp-theme-color-2);
+  padding: 21px 45px;
+  font-family: var(--tp-font-heading);
+  font-size: 18px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.tp-btn {
+  color: #fff;
+  background-color: var(--tp-theme-color);
+  padding: 15px 42px;
+  font-family: var(--tp-font-heading);
+  font-size: 18px;
+  border-radius: 5px;
+  display: inline-block;
+}
