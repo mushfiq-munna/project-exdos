@@ -43,5 +43,8 @@
 }
 
 .tp-black-bg {
-  background-color: #0a0e19;
+  background-color: var(--tp-common-black);
+}
+.tp-blue-bg {
+  background-color: var(--tp-theme-color);
 }

@@ -1,1 +1,8 @@
-@use '../utils' as *;
+@use "../utils" as *;
+
+.tp-section-title {
+  font-size: 60px;
+  &-white {
+    color: #fff;
+  }
+}

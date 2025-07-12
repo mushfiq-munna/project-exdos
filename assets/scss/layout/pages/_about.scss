@@ -1,1 +1,28 @@
-@use '../../utils' as *;
+@use "../../utils" as *;
+
+.tp-about {
+  &-video {
+    &-icon {
+      a {
+        height: 80px;
+        width: 80px;
+        border: 1px solid #57595c;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 78px;
+        display: inline-block;
+      }
+    }
+    & h4 {
+      color: #57595c;
+      font-size: 30px;
+      margin: 0;
+    }
+  }
+  &-img {
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+}

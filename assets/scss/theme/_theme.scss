@@ -193,12 +193,12 @@ ul {
 }
 
 p {
-  font-family: var(--tp-ff-p);
-  font-size: 14px;
+  font-family: var(--tp-font-body);
+  font-size: 17px;
   font-weight: 400;
   color: var(--tp-text-body);
   margin-bottom: 15px;
-  line-height: 26px;
+  line-height: 28px;
 }
 
 a,
@@ -260,20 +260,21 @@ input[type="number"],
 input[type="password"],
 input[type="url"],
 textarea {
-  outline: none;
-  background-color: #fff;
+  color: var(--tp-common-black);
+  background-color: transparent;
   height: 56px;
   width: 100%;
   line-height: 56px;
   font-size: 14px;
-  color: var(--tp-common-black);
-  padding-left: 26px;
-  padding-right: 26px;
-  border: 1px solid #e0e2e3;
+  font-weight: 500;
+  text-transform: lowercase;
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid #57595c;
 
-  // @include tp-placeholder{
-  // 	color: #95999D;
-  // }
+  @include tp-placeholder {
+    color: var(--tp-body-color);
+  }
 
   &:focus {
     border-color: var(--tp-common-black);

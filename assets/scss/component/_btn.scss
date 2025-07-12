@@ -2,11 +2,14 @@
 
 .tp-btn-sec {
   background-color: var(--tp-theme-color-2);
-  padding: 21px 45px;
+  padding: 15px 42px;
   font-family: var(--tp-font-heading);
   font-size: 18px;
   border-radius: 5px;
   display: inline-block;
+  &-lg {
+    padding: 21px 45px;
+  }
 }
 
 .tp-btn {
