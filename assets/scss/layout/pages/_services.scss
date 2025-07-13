@@ -1,1 +1,37 @@
-@use '../../utils' as *;
+@use "../../utils" as *;
+
+.tpservices {
+  margin-left: -1px;
+  border: 1px solid #57595c;
+  padding: 38px;
+
+  &__title {
+    font-size: 30px;
+  }
+  &__text {
+    & p {
+    }
+  }
+  &__list {
+    & ul {
+      list-style: none;
+      & li {
+        color: #57595c;
+        margin-bottom: 5px;
+        &::before {
+          background-color: #57595c;
+          content: "";
+          height: 8px;
+          width: 8px;
+          display: inline-block;
+          border-radius: 30px;
+          margin-right: 10px;
+          transform: translateY(-1px);
+        }
+      }
+    }
+  }
+  &:hover {
+    background-color: var(--tp-rom-color);
+  }
+}

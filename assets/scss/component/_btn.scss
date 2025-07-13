@@ -21,3 +21,23 @@
   border-radius: 5px;
   display: inline-block;
 }
+
+.tp-sv-btn {
+  background: var(--tp-rom-color);
+  border-radius: 5px;
+  display: block;
+  padding: 6px 20px;
+  font-size: 18px;
+  font-family: var(--tp-font-heading);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  & i {
+    transform: rotate(-45deg);
+  }
+  &:hover {
+    background-color: var(--tp-theme-color);
+    color: #fff;
+  }
+}
