@@ -1,17 +1,5 @@
 @use "../utils" as *;
 
-.tp-btn-sec {
-  background-color: var(--tp-theme-color-2);
-  padding: 15px 42px;
-  font-family: var(--tp-font-heading);
-  font-size: 18px;
-  border-radius: 5px;
-  display: inline-block;
-  &-lg {
-    padding: 21px 45px;
-  }
-}
-
 .tp-btn {
   color: #fff;
   background-color: var(--tp-theme-color);
@@ -20,6 +8,30 @@
   font-size: 18px;
   border-radius: 5px;
   display: inline-block;
+
+  &-sec {
+    background-color: var(--tp-theme-color-2);
+    padding: 15px 42px;
+    font-family: var(--tp-font-heading);
+    font-size: 18px;
+    border-radius: 5px;
+    display: inline-block;
+    &-lg {
+      padding: 21px 45px;
+    }
+  }
+
+  &-circle {
+    font-family: var(--tp-font-heading);
+    font-size: 60px;
+    color: #fff;
+    opacity: 0.3;
+    padding: 48px 75px;
+    display: inline-block;
+    line-height: 1;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 100%;
+  }
 }
 
 .tp-sv-btn {

@@ -37,7 +37,7 @@
 }
 
 /*-- Padding Bottom --*/
-@for $i from 1 through 100 {
+@for $i from 1 through 150 {
   .pb-#{1 * $i} {
     padding-bottom: 1px * $i;
   }
@@ -51,7 +51,7 @@
 }
 
 /*-- Padding Right --*/
-@for $i from 1 through 100 {
+@for $i from 1 through 150 {
   .pr-#{1 * $i} {
     padding-right: 1px * $i;
   }

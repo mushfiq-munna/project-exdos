@@ -1,1 +1,51 @@
-@use '../../utils' as *;
+@use "../../utils" as *;
+
+.tp-testimonial {
+  &-desc {
+    font-size: 100px;
+  }
+  &-name {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  &-desig {
+    color: var(--tp-body-color);
+    font-size: 17px;
+
+    margin-left: 76px;
+    & span {
+      height: 2px;
+      width: 60px;
+      display: inline-block;
+      background: #57595c;
+      margin-right: 5px;
+      transform: translateY(-5px);
+    }
+  }
+  &-shape {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &-thumb-1 {
+    top: 115px;
+    left: 0;
+  }
+  &-thumb-2 {
+    right: 0;
+    top: 35px;
+  }
+}
+
+.tp-swiper-test-button {
+  position: absolute;
+  left: -100px;
+  top: 35%;
+  &-next {
+    left: auto;
+    right: -100px;
+  }
+}
