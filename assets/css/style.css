@@ -474,8 +474,22 @@ textarea {
   background-color: var(--tp-theme-color);
 }
 
+.tp-yellow-bg {
+  background-color: var(--tp-theme-color-2);
+}
+
 .tp-nblue-bg {
   background-color: var(--tp-theme-nblue);
+}
+
+.tp-slide-transition {
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+.tp-brand-slide-element {
+  width: auto;
+  display: inline-block;
 }
 
 /*--
@@ -4689,6 +4703,44 @@ textarea {
 }
 .tpservices:hover {
   background-color: var(--tp-rom-color);
+}
+
+.tpteam__thumb img {
+  width: 100%;
+}
+.tpteam__info span {
+  color: #57595c;
+  font-size: 15px;
+}
+.tpteam__info span i {
+  height: 1px;
+  width: 30px;
+  background-color: #d6d6d1;
+  display: inline-block;
+  margin-right: 10px;
+  transform: translateY(-5px);
+}
+.tpteam__social a {
+  color: #0a0e1a;
+  font-size: 25px;
+  margin-right: 15px;
+}
+.tpteam__title {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.tp-swiper-team-button {
+  display: inline-block;
+}
+
+.tp-team-nav span {
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  background-color: #dbdbdb;
+  border-radius: 100%;
+  margin: 0 10px;
 }
 
 .tp-testimonial-desc {

@@ -1,1 +1,50 @@
-@use '../../utils' as *;
+@use "../../utils" as *;
+
+.tpteam {
+  &__thumb {
+    & img {
+      width: 100%;
+    }
+  }
+  &__info {
+    & span {
+      color: #57595c;
+      font-size: 15px;
+      & i {
+        height: 1px;
+        width: 30px;
+        background-color: #d6d6d1;
+        display: inline-block;
+        margin-right: 10px;
+        transform: translateY(-5px);
+      }
+    }
+  }
+  &__social {
+    & a {
+      color: #0a0e1a;
+      font-size: 25px;
+      margin-right: 15px;
+    }
+  }
+
+  &__title {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+}
+
+.tp-swiper-team-button {
+  display: inline-block;
+}
+
+.tp-team-nav {
+  & span {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background-color: #dbdbdb;
+    border-radius: 100%;
+    margin: 0 10px;
+  }
+}
