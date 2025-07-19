@@ -129,6 +129,7 @@
   --tp-theme-color-2: #ffe815;
   --tp-heading-color: #0a0e1a;
   --tp-common-black: #0a0e19;
+  --tp-cream-color: #fbf6ef;
   --tp-body-color: #57595c;
   --tp-theme-nblue: #001c52;
   --tp-rom-color: #fbf6ef;
@@ -480,6 +481,10 @@ textarea {
 
 .tp-nblue-bg {
   background-color: var(--tp-theme-nblue);
+}
+
+.tp-cream-bg {
+  background-color: var(--tp-cream-color);
 }
 
 .tp-slide-transition {
@@ -4741,6 +4746,39 @@ textarea {
   background-color: #dbdbdb;
   border-radius: 100%;
   margin: 0 10px;
+}
+
+.tpaward-wrapper .row .col-md-6:nth-child(even) .tpaward {
+  padding-left: 50px;
+  border-left: 1px solid #57595c;
+}
+.tpaward-wrapper .row .col-md-6:first-child .tpaward {
+  padding-top: 0;
+}
+.tpaward-wrapper .row .col-md-6:nth-child(2) .tpaward {
+  padding-top: 0;
+}
+.tpaward-wrapper .row .col-md-6:nth-last-child(-n+2) .tpaward {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.tpaward {
+  border-bottom: 1px solid #57595c;
+  padding: 38px 0;
+}
+.tpaward-wrapper {
+  padding-right: 80px;
+}
+.tpaward span {
+  font-family: var(--tp-font-heading);
+  font-size: 20px;
+  color: #57595c;
+  display: block;
+  margin-bottom: 10px;
+}
+.tpaward__title {
+  font-size: 30px;
 }
 
 .tp-testimonial-desc {
