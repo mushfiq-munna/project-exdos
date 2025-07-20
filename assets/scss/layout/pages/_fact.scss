@@ -1,1 +1,28 @@
-@use '../../utils' as *;
+@use "../../utils" as *;
+
+.custom-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tpfact {
+  &__icon {
+  }
+
+  &__text {
+    & span {
+      font-family: var(--tp-font-heading);
+      font-size: 100px;
+      color: #fff;
+      display: inline-block;
+      line-height: 1;
+      // margin-top: 35px;
+    }
+  }
+  &__title {
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.5;
+    // margin-top: 30px;
+  }
+}

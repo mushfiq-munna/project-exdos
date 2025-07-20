@@ -196,6 +196,18 @@
   color: #fff;
 }
 
+.tp-text-btn {
+  font-family: var(--tp-font-heading);
+  font-size: 18px;
+  color: #0a0e1a;
+  display: flex;
+  align-items: center;
+}
+.tp-text-btn i {
+  margin-left: 8px;
+  transform: rotate(-45deg);
+}
+
 .tp-section-title {
   font-size: 60px;
 }
@@ -4436,6 +4448,34 @@ textarea {
   padding-bottom: 170px;
 }
 
+.tpblog__thumb a img {
+  border-radius: 20px;
+}
+.tpblog__meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tpblog__meta span {
+  font-size: 17px;
+  color: #57595c;
+}
+.tpblog__meta span i {
+  margin-right: 7px;
+}
+.tpblog__meta cite {
+  width: 2px;
+  height: 16px;
+  background: #57595c;
+  display: inline-block;
+  margin: 0 8px;
+}
+.tpblog__title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.25;
+}
+
 .tp-transparent-header {
   position: absolute;
   top: 0;
@@ -4661,6 +4701,24 @@ textarea {
   top: 40%;
   left: 35%;
   z-index: 1;
+}
+
+.custom-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tpfact__text span {
+  font-family: var(--tp-font-heading);
+  font-size: 100px;
+  color: #fff;
+  display: inline-block;
+  line-height: 1;
+}
+.tpfact__title {
+  font-size: 30px;
+  color: #fff;
+  opacity: 0.5;
 }
 
 .tp-project-tab button {

@@ -1,6 +1,14 @@
 (function ($) {
   "use strict";
 
+  // data bg img
+  $("[data-background]").each(function () {
+    $(this).css(
+      "background-image",
+      "url( " + $(this).attr("data-background") + ")"
+    );
+  });
+
   // testimonial slider
   var swiper = new Swiper(".tp-testimonial-active", {
     slidesPerView: 1,
