@@ -1,1 +1,148 @@
-@use '../../utils' as *;
+@use "../../utils" as *;
+
+.footer-sep {
+  height: 1px;
+  background: #fff;
+  opacity: 0.15;
+}
+
+.tpfooter-social {
+  & a {
+    color: #fff;
+    opacity: 0.7;
+    margin-right: 18px;
+  }
+}
+
+.tp-footer-widget-area {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.tp-footer-widget {
+  & ul {
+    & li {
+      margin-bottom: 5px;
+      list-style: none;
+      & a {
+        font-size: 17px;
+        color: #b1b4ba;
+      }
+    }
+  }
+}
+
+.tp-footer-widget-title {
+  font-size: 20px;
+  color: #fff;
+}
+
+.footer-content {
+  font-size: 17px;
+  color: #b1b4ba;
+}
+
+.tp-footer-contact {
+  &-item {
+    & span {
+      font-size: 17px;
+      color: #b1b4ba;
+    }
+    & h4 {
+      font-size: 30px;
+      color: #fff;
+      margin-top: 10px;
+    }
+  }
+}
+
+.footer-col {
+  &-3 {
+    padding-left: 60px;
+  }
+  &-4 {
+    padding-left: 35px;
+  }
+  &-3 {
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 1px;
+      left: -40px;
+      top: 0px;
+      background-color: #fff;
+      opacity: 0.15;
+    }
+    &::after {
+      left: auto;
+      right: 30px;
+    }
+  }
+}
+
+.tp-footer-copright {
+  & p {
+    font-size: 17px;
+    color: #b1b4ba;
+    margin: 0;
+    & a {
+      font-weight: 500;
+      color: var(--tp-theme-color-2);
+    }
+  }
+}
+
+.tp-footer-menu {
+  & ul {
+    & li {
+      list-style: none;
+      display: inline-block;
+      padding-left: 33px;
+      margin-left: 33px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        height: 13px;
+        width: 1.5px;
+        left: 0;
+        top: 8px;
+        background-color: #b1b4ba;
+      }
+      &:first-child {
+        &::before {
+          display: none;
+        }
+      }
+      & a {
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #b1b4ba;
+      }
+    }
+  }
+}
+
+.tp-footer {
+  &-shape1 {
+    top: 47%;
+    left: 10%;
+  }
+
+  &-shape2 {
+    top: 15%;
+    left: 45%;
+  }
+
+  &-shape3 {
+    top: 8%;
+    right: 7%;
+  }
+
+  &-shape4 {
+    bottom: 10%;
+    right: 11%;
+  }
+}

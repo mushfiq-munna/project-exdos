@@ -15,14 +15,15 @@
       justify-content: space-between;
     }
     & input {
-      border-color: #fff;
       color: #fff;
+      border-color: #57595c;
 
       &:focus {
+        color: #fff;
         border-color: #fff;
       }
       @include tp-placeholder {
-        color: #fff;
+        color: #57595c;
       }
     }
   }
