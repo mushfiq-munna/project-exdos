@@ -44,8 +44,14 @@
   position: absolute;
   left: -100px;
   top: 35%;
+  font-size: 52px;
   &-next {
     left: auto;
     right: -100px;
   }
+  &-prev {
+  }
+}
+.tp-rot-180 {
+  transform: rotate(180deg);
 }

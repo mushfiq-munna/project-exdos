@@ -5,6 +5,14 @@
   border: 1px solid #57595c;
   padding: 38px;
 
+  &__icon {
+    & span {
+      font-size: 92px;
+      color: var(--tp-common-black);
+      display: flex;
+    }
+  }
+
   &__title {
     font-size: 30px;
   }
