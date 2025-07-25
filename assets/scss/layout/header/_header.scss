@@ -21,13 +21,17 @@
   & ul {
     & li {
       display: inline-block;
-      margin-right: 32px;
+      margin-right: 42px;
       position: relative;
+      @media #{$xl,$xxlm} {
+        margin-right: 27px;
+      }
+
       & a {
         color: #fff;
         font-family: var(--tp-font-heading);
         font-size: 18px;
-        padding: 30px 0;
+        padding: 36px 0;
         display: inline-block;
         position: relative;
         &::before {
@@ -109,16 +113,16 @@
   &-cta {
     display: flex;
     align-items: center;
-    padding: 18px 40px;
+    padding: 43px 40px;
     border-left: 1px solid #ffffff15;
+
+    @media #{$xl,$xxlm,$xxl} {
+      padding: 22px 23px;
+    }
 
     & i {
       font-size: 30px;
       color: var(--tp-theme-color-2);
-    }
-
-    @media #{$xl} {
-      padding: 27px 23px;
     }
 
     &-icon {
@@ -127,24 +131,28 @@
     &-text {
       span {
         color: #b1b4ba;
-        font-size: 13px;
+        font-size: 15px;
         display: block;
       }
       h4 {
         color: #ffffff;
-        font-size: 12px;
+        font-size: 18px;
       }
     }
   }
   &-bar {
     button {
       background-color: #23252d;
-      padding: 20px 25px;
+      padding: 29px 33px;
       display: flex;
       align-items: center;
+
+      @media #{$xl,$xxlm,$xxl} {
+        padding: 24px 36px;
+      }
       & i {
         color: #fff;
-        font-size: 50px;
+        font-size: 52px;
       }
     }
   }

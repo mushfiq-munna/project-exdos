@@ -4623,14 +4623,19 @@ textarea {
 }
 .tp-main-menu ul li {
   display: inline-block;
-  margin-right: 32px;
+  margin-right: 42px;
   position: relative;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 1400px) and (max-width: 1599px) {
+  .tp-main-menu ul li {
+    margin-right: 27px;
+  }
 }
 .tp-main-menu ul li a {
   color: #fff;
   font-family: var(--tp-font-heading);
   font-size: 18px;
-  padding: 30px 0;
+  padding: 36px 0;
   display: inline-block;
   position: relative;
 }
@@ -4703,39 +4708,44 @@ textarea {
 .tp-header-cta {
   display: flex;
   align-items: center;
-  padding: 18px 40px;
+  padding: 43px 40px;
   border-left: 1px solid rgba(255, 255, 255, 0.0823529412);
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1600px) and (max-width: 3999px) {
+  .tp-header-cta {
+    padding: 22px 23px;
+  }
 }
 .tp-header-cta i {
   font-size: 30px;
   color: var(--tp-theme-color-2);
-}
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .tp-header-cta {
-    padding: 27px 23px;
-  }
 }
 .tp-header-cta-icon {
   margin-right: 15px;
 }
 .tp-header-cta-text span {
   color: #b1b4ba;
-  font-size: 13px;
+  font-size: 15px;
   display: block;
 }
 .tp-header-cta-text h4 {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 18px;
 }
 .tp-header-bar button {
   background-color: #23252d;
-  padding: 20px 25px;
+  padding: 29px 33px;
   display: flex;
   align-items: center;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1600px) and (max-width: 3999px) {
+  .tp-header-bar button {
+    padding: 24px 36px;
+  }
+}
 .tp-header-bar button i {
   color: #fff;
-  font-size: 50px;
+  font-size: 52px;
 }
 
 .tp-hero-title {
