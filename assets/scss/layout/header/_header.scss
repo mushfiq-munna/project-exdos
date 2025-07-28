@@ -23,8 +23,11 @@
       display: inline-block;
       margin-right: 42px;
       position: relative;
-      @media #{$xl,$xxlm} {
+      @media #{$xxlm} {
         margin-right: 27px;
+      }
+      @media #{$xl} {
+        margin-right: 20px;
       }
 
       & a {
@@ -100,25 +103,30 @@
   }
   &-search {
     margin-right: 40px;
-    & i {
-      font-size: 30px;
-      color: #b1b4ba;
-    }
 
     @media #{$xl} {
       margin-right: 25px;
+    }
+
+    & i {
+      font-size: 30px;
+      color: #b1b4ba;
     }
   }
 
   &-cta {
     display: flex;
     align-items: center;
-    padding: 43px 40px;
+    padding: 28px 40px;
     border-left: 1px solid #ffffff15;
 
-    @media #{$xl,$xxlm,$xxl} {
-      padding: 22px 23px;
+    @media #{$xl} {
+      padding: 28px 25px;
     }
+
+    // @media #{$xl,$xxlm,$xxl} {
+    //   padding: 22px 23px;
+    // }
 
     & i {
       font-size: 30px;
@@ -143,13 +151,13 @@
   &-bar {
     button {
       background-color: #23252d;
-      padding: 29px 33px;
+      padding: 30px 33px;
       display: flex;
       align-items: center;
 
-      @media #{$xl,$xxlm,$xxl} {
-        padding: 24px 36px;
-      }
+      // @media #{$xl,$xxlm,$xxl} {
+      //   padding: 24px 36px;
+      // }
       & i {
         color: #fff;
         font-size: 52px;

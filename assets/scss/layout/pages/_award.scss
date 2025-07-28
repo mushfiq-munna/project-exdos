@@ -32,6 +32,9 @@
   padding: 38px 0;
   &-wrapper {
     padding-right: 80px;
+    @media #{$xl} {
+      padding-right: 45px;
+    }
   }
   & span {
     font-family: var(--tp-font-heading);

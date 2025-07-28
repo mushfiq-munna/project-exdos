@@ -3,7 +3,10 @@
 .tpservices {
   margin-left: -1px;
   border: 1px solid #57595c;
-  padding: 38px;
+  padding: 40px;
+  @media #{$xl} {
+    padding: 35px 24px;
+  }
 
   &__icon {
     & span {
@@ -15,6 +18,10 @@
 
   &__title {
     font-size: 30px;
+
+    @media #{$xl} {
+      font-size: 28px;
+    }
   }
   &__text {
     & p {

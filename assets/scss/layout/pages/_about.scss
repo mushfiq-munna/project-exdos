@@ -2,6 +2,9 @@
 
 .tp-about {
   &-video {
+    @media #{$xl} {
+      padding-left: 20px;
+    }
     &-icon {
       a {
         height: 80px;
@@ -22,7 +25,13 @@
   &-img {
     img {
       width: 100%;
-      border-radius: 10px;
+      border-radius: 20px;
+    }
+  }
+
+  &-box {
+    @media #{$xl} {
+      padding-left: 20px;
     }
   }
 }

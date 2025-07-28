@@ -1,11 +1,18 @@
 @use "../../utils" as *;
 
 .tp-hero {
+  @media #{$xxlm} {
+    padding-left: 90px;
+  }
   &-title {
     color: #ffffff;
     font-size: 110px;
     text-transform: uppercase;
     margin: 0;
+
+    @media #{$xl} {
+      font-size: 100px;
+    }
   }
   &-span-1 {
     background: radial-gradient(
@@ -31,6 +38,11 @@
   &-shape-2 {
     left: 386px;
     top: 295px;
+    @media #{$xl} {
+      top: 50%;
+      z-index: 1;
+      width: 27%;
+    }
   }
   &-shape-3 {
     left: 60%;

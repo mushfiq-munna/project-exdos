@@ -7,9 +7,12 @@
     }
   }
   &__info {
+    @media #{$xxlm, $xl} {
+      margin-left: 10px;
+    }
     & span {
       color: #57595c;
-      font-size: 15px;
+      font-size: 17px;
       & i {
         height: 1px;
         width: 30px;
@@ -29,7 +32,7 @@
   }
 
   &__title {
-    font-size: 28px;
+    font-size: 30px;
     margin-bottom: 5px;
   }
 }

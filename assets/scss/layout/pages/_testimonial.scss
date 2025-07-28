@@ -45,9 +45,16 @@
   left: -100px;
   top: 35%;
   font-size: 52px;
+  @media #{$xxlm,$xl} {
+    left: 0;
+    top: -80px;
+  }
   &-next {
     left: auto;
     right: -100px;
+    @media #{$xxlm,$xl} {
+      right: 0;
+    }
   }
   &-prev {
   }
