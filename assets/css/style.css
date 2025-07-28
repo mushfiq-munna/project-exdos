@@ -209,6 +209,11 @@
 .tp-section-title {
   font-size: 60px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-section-title {
+    font-size: 54px;
+  }
+}
 .tp-section-title-white {
   color: #fff;
 }
@@ -4526,6 +4531,11 @@ img {
   color: #fff;
   margin-top: 10px;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .tp-footer-contact-item h4 {
+    font-size: 26px;
+  }
+}
 
 .footer-col-3 {
   padding-left: 60px;
@@ -4614,6 +4624,11 @@ img {
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .tp-header-area {
     padding-left: 30px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-header-area {
+    padding-left: 40px;
   }
 }
 
@@ -4765,6 +4780,11 @@ img {
     font-size: 100px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-hero-title {
+    font-size: 75px;
+  }
+}
 .tp-hero-span-1 {
   background: radial-gradient(42.24% 2817.5% at 52.45% 54.17%, rgba(255, 232, 21, 0.95) 0%, #3c7fff 100%);
   -webkit-background-clip: text;
@@ -4796,6 +4816,12 @@ img {
   left: 60%;
   top: 31%;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-hero-shape-3 {
+    left: 35%;
+    top: 29%;
+  }
+}
 .tp-hero-shape-4 {
   right: 192px;
   top: 200px;
@@ -4803,6 +4829,12 @@ img {
 .tp-hero-shape-5 {
   right: 300px;
   bottom: 130px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-hero-shape-5 {
+    right: 100px;
+    bottom: 73px;
+  }
 }
 .tp-hero-info {
   color: #b1b4ba;
@@ -4828,6 +4860,11 @@ img {
     padding-left: 20px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-about-video {
+    padding-left: 0px;
+  }
+}
 .tp-about-video-icon a {
   height: 80px;
   width: 80px;
@@ -4851,6 +4888,11 @@ img {
     padding-left: 20px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-about-box {
+    padding-left: 0px;
+  }
+}
 
 .tp-newsletter-margin {
   margin-top: -110px;
@@ -4858,6 +4900,11 @@ img {
 .tp-newsletter-bg {
   padding: 80px;
   border-radius: 20px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-newsletter-box {
+    margin-top: 30px;
+  }
 }
 .tp-newsletter-box form {
   display: flex;
@@ -4932,7 +4979,7 @@ img {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .fs-100 {
-    font-size: 95px;
+    font-size: 85px;
   }
 }
 
@@ -4967,6 +5014,12 @@ img {
   opacity: 0.5;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-project-tab-area {
+    padding-right: 40px;
+  }
+}
+
 .tp-project-tab button {
   color: #fff;
   font-size: 100px;
@@ -4977,14 +5030,23 @@ img {
   padding-right: 35px;
   transition: 0.3s;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+@media only screen and (min-width: 1401px) and (max-width: 1600px) {
   .tp-project-tab button {
-    padding-left: 41px;
+    font-size: 80px;
   }
 }
-@media only screen and (min-width: 1401px) and (max-width: 1600px), only screen and (min-width: 1200px) and (max-width: 1400px) {
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .tp-project-tab button {
     font-size: 75px;
+    padding-left: 40px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-project-tab button {
+    font-size: 55px;
+    padding-left: 30px;
+    display: block;
+    width: 100%;
   }
 }
 .tp-project-tab button.active {
@@ -4992,7 +5054,6 @@ img {
   border-color: var(--tp-theme-color-2);
 }
 .tp-project-tab-thumb img {
-  width: 100%;
   border-radius: 20px;
 }
 
@@ -5040,12 +5101,30 @@ img {
   background-color: var(--tp-rom-color);
 }
 
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .tp-team-area {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-team-area {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
 .tpteam__thumb img {
   width: 100%;
 }
 @media only screen and (min-width: 1401px) and (max-width: 1600px), only screen and (min-width: 1200px) and (max-width: 1400px) {
   .tpteam__info {
-    margin-left: 10px;
+    margin-left: 20px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tpteam__info {
+    margin-left: 40px;
   }
 }
 .tpteam__info span {
@@ -5068,6 +5147,11 @@ img {
 .tpteam__title {
   font-size: 30px;
   margin-bottom: 5px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .tpteam__title {
+    font-size: 27px;
+  }
 }
 
 .tp-swiper-team-button {
@@ -5125,6 +5209,16 @@ img {
 .tp-testimonial-desc {
   font-size: 100px;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .tp-testimonial-desc {
+    font-size: 75px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-testimonial-desc {
+    font-size: 60px;
+  }
+}
 .tp-testimonial-name {
   font-size: 30px;
   margin-bottom: 5px;
@@ -5149,9 +5243,24 @@ img {
   left: 0;
   z-index: -1;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .tp-testimonial-shape {
+    top: 50px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-testimonial-shape {
+    top: 0;
+  }
+}
 .tp-testimonial-thumb-1 {
   top: 115px;
   left: 0;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .tp-testimonial-thumb-1 {
+    top: 60px;
+  }
 }
 .tp-testimonial-thumb-2 {
   right: 0;
@@ -5170,6 +5279,12 @@ img {
     top: -80px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-swiper-test-button {
+    left: 0;
+    z-index: 9;
+  }
+}
 .tp-swiper-test-button-next {
   left: auto;
   right: -100px;
@@ -5177,6 +5292,12 @@ img {
 @media only screen and (min-width: 1401px) and (max-width: 1600px), only screen and (min-width: 1200px) and (max-width: 1400px) {
   .tp-swiper-test-button-next {
     right: 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-swiper-test-button-next {
+    right: 0px;
+    z-index: 9;
   }
 }
 .tp-rot-180 {

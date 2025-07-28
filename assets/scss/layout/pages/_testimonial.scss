@@ -3,6 +3,12 @@
 .tp-testimonial {
   &-desc {
     font-size: 100px;
+    @media #{$xl} {
+      font-size: 75px;
+    }
+    @media #{$lg} {
+      font-size: 60px;
+    }
   }
   &-name {
     font-size: 30px;
@@ -11,7 +17,6 @@
   &-desig {
     color: var(--tp-body-color);
     font-size: 17px;
-
     margin-left: 76px;
     & span {
       height: 2px;
@@ -28,11 +33,20 @@
     right: 0;
     left: 0;
     z-index: -1;
+    @media #{$xl} {
+      top: 50px;
+    }
+    @media #{$lg} {
+      top: 0;
+    }
   }
 
   &-thumb-1 {
     top: 115px;
     left: 0;
+    @media #{$xl} {
+      top: 60px;
+    }
   }
   &-thumb-2 {
     right: 0;
@@ -49,11 +63,19 @@
     left: 0;
     top: -80px;
   }
+  @media #{$lg} {
+    left: 0;
+    z-index: 9;
+  }
   &-next {
     left: auto;
     right: -100px;
     @media #{$xxlm,$xl} {
       right: 0;
+    }
+    @media #{$lg} {
+      right: 0px;
+      z-index: 9;
     }
   }
   &-prev {

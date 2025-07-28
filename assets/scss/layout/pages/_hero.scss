@@ -13,6 +13,9 @@
     @media #{$xl} {
       font-size: 100px;
     }
+    @media #{$lg} {
+      font-size: 75px;
+    }
   }
   &-span-1 {
     background: radial-gradient(
@@ -47,6 +50,10 @@
   &-shape-3 {
     left: 60%;
     top: 31%;
+    @media #{$lg} {
+      left: 35%;
+      top: 29%;
+    }
   }
   &-shape-4 {
     right: 192px;
@@ -55,6 +62,10 @@
   &-shape-5 {
     right: 300px;
     bottom: 130px;
+    @media #{$lg} {
+      right: 100px;
+      bottom: 73px;
+    }
   }
 
   &-info {

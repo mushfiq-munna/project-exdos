@@ -5,6 +5,9 @@
     @media #{$xl} {
       padding-left: 20px;
     }
+    @media #{$lg} {
+      padding-left: 0px;
+    }
     &-icon {
       a {
         height: 80px;
@@ -32,6 +35,9 @@
   &-box {
     @media #{$xl} {
       padding-left: 20px;
+    }
+    @media #{$lg} {
+      padding-left: 0px;
     }
   }
 }

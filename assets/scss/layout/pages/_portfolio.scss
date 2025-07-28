@@ -1,5 +1,10 @@
 @use "../../utils" as *;
 
+.tp-project-tab-area {
+  @media #{$lg} {
+    padding-right: 40px;
+  }
+}
 .tp-project {
   &-tab {
     & button {
@@ -11,11 +16,20 @@
       padding: 20px 100px;
       padding-right: 35px;
       transition: 0.3s;
-      @media #{$xl} {
-        padding-left: 41px;
+
+      @media #{$xxlm} {
+        font-size: 80px;
       }
-      @media #{$xxlm,$xl} {
+      @media #{$xl} {
         font-size: 75px;
+        padding-left: 40px;
+      }
+
+      @media #{$lg} {
+        font-size: 55px;
+        padding-left: 30px;
+        display: block;
+        width: 100%;
       }
       &.active {
         color: var(--tp-theme-color-2);
@@ -25,7 +39,6 @@
 
     &-thumb {
       & img {
-        width: 100%;
         border-radius: 20px;
       }
     }

@@ -70,5 +70,17 @@
       nextEl: ".tp-swiper-team-button-next",
       prevEl: ".tp-swiper-team-button-prev",
     },
+
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+    },
   });
 })(jQuery);

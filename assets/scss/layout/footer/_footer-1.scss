@@ -51,6 +51,9 @@
       font-size: 30px;
       color: #fff;
       margin-top: 10px;
+      @media #{$xl} {
+        font-size: 26px;
+      }
     }
   }
 }
