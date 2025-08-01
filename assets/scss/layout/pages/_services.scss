@@ -4,7 +4,7 @@
   margin-left: -1px;
   border: 1px solid #57595c;
   padding: 40px;
-  @media #{$xl} {
+  @media #{$xl,$md} {
     padding: 35px 24px;
   }
 

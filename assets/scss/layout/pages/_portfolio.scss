@@ -4,6 +4,9 @@
   @media #{$lg} {
     padding-right: 40px;
   }
+  @media #{$md} {
+    padding-right: 0;
+  }
 }
 .tp-project {
   &-tab {
@@ -16,6 +19,8 @@
       padding: 20px 100px;
       padding-right: 35px;
       transition: 0.3s;
+      text-align: left;
+      width: 100%;
 
       @media #{$xxlm} {
         font-size: 80px;
@@ -28,8 +33,11 @@
       @media #{$lg} {
         font-size: 55px;
         padding-left: 30px;
-        display: block;
-        width: 100%;
+      }
+
+      @media #{$md} {
+        font-size: 90px;
+        padding-left: 40px;
       }
       &.active {
         color: var(--tp-theme-color-2);
@@ -38,8 +46,16 @@
     }
 
     &-thumb {
+      @media #{$md} {
+        padding: 0 40px;
+      }
       & img {
         border-radius: 20px;
+      }
+    }
+    &-content {
+      @media #{$md} {
+        padding-left: 0;
       }
     }
   }

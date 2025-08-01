@@ -7,6 +7,9 @@
   &-bg {
     padding: 80px;
     border-radius: 20px;
+    @media #{$md} {
+      padding: 80px 40px;
+    }
   }
   &-box {
     @media #{$lg} {
@@ -53,6 +56,10 @@
     @media #{$xl} {
       font-size: 80px;
       left: 40px;
+    }
+    @media #{$md} {
+      font-size: 75px;
+      left: 35px;
     }
   }
 }

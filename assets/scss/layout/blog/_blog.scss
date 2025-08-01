@@ -9,6 +9,9 @@
     }
   }
   &__content {
+    @media #{$lg,$md} {
+      padding-left: 3px;
+    }
   }
   &__meta {
     display: flex;
@@ -30,8 +33,10 @@
     }
   }
   &__title {
-    font-weight: 400;
     font-size: 30px;
     line-height: 1.25;
+    @media #{$lg} {
+      font-size: 27px;
+    }
   }
 }

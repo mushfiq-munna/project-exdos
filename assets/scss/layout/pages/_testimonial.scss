@@ -3,11 +3,15 @@
 .tp-testimonial {
   &-desc {
     font-size: 100px;
+    z-index: 1;
     @media #{$xl} {
       font-size: 75px;
     }
     @media #{$lg} {
       font-size: 60px;
+    }
+    @media #{$md} {
+      font-size: 50px;
     }
   }
   &-name {
@@ -59,23 +63,22 @@
   left: -100px;
   top: 35%;
   font-size: 52px;
-  @media #{$xxlm,$xl} {
+  z-index: 9;
+  @media #{$xxlm,$xl,$md} {
     left: 0;
-    top: -80px;
+    top: -45px;
   }
   @media #{$lg} {
     left: 0;
-    z-index: 9;
   }
   &-next {
     left: auto;
     right: -100px;
-    @media #{$xxlm,$xl} {
+    @media #{$xxlm,$xl,$md} {
       right: 0;
     }
     @media #{$lg} {
       right: 0px;
-      z-index: 9;
     }
   }
   &-prev {

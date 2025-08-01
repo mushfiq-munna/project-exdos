@@ -3,6 +3,7 @@
 .custom-row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .tpfact {
@@ -29,5 +30,11 @@
     color: #fff;
     opacity: 0.5;
     // margin-top: 30px;
+  }
+}
+
+.cols {
+  @media #{$md} {
+    width: 50%;
   }
 }
