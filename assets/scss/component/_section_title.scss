@@ -8,7 +8,21 @@
   @media #{$md} {
     font-size: 39px;
   }
+  @media #{$xs,$sm} {
+    font-size: 39px;
+  }
+
+  & br {
+    display: none;
+  }
   &-white {
     color: #fff;
+  }
+  &-wrapper {
+    & p {
+      & br {
+        display: none;
+      }
+    }
   }
 }

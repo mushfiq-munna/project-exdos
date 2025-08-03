@@ -12,6 +12,9 @@
     opacity: 0.7;
     margin-right: 18px;
   }
+  @media #{$xs,$sm} {
+    padding-left: 0;
+  }
 }
 
 .tp-footer-widget-area {
@@ -66,13 +69,13 @@
 .footer-col {
   &-3 {
     padding-left: 60px;
-    @media #{$md} {
+    @media #{$md,$xs,$sm} {
       padding-left: 0;
     }
   }
   &-4 {
     padding-left: 35px;
-    @media #{$md} {
+    @media #{$md,$xs,$sm} {
       padding-left: 0;
     }
   }
@@ -88,7 +91,7 @@
       top: 0px;
       background-color: #fff;
       opacity: 0.15;
-      @media #{$md} {
+      @media #{$md,$xs,$sm} {
         display: none;
       }
     }
@@ -123,8 +126,12 @@
       padding-left: 33px;
       margin-left: 33px;
       position: relative;
+      @media #{$xs,$sm} {
+        padding-left: 10px;
+        margin-left: 10px;
+      }
       &:first-child {
-        @media #{$md} {
+        @media #{$md,$xs,$sm} {
           padding-left: 0;
           margin-left: 0;
         }

@@ -5,7 +5,7 @@
     @media #{$xl} {
       padding-left: 20px;
     }
-    @media #{$lg,$md} {
+    @media #{$lg,$md,$xs,$sm} {
       padding-left: 0px;
     }
     &-icon {
@@ -29,6 +29,10 @@
     @media #{$xl} {
       padding-left: 20px;
     }
+    @media #{$xs,$sm} {
+      padding-left: 0;
+      margin-bottom: 30px;
+    }
     img {
       width: 100%;
       border-radius: 20px;
@@ -39,7 +43,7 @@
     @media #{$xl} {
       padding-left: 20px;
     }
-    @media #{$lg,$md} {
+    @media #{$lg,$md,$xs,$sm} {
       padding-left: 0px;
     }
   }

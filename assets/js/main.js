@@ -72,6 +72,9 @@
     },
 
     breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
       768: {
         slidesPerView: 2,
       },

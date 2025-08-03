@@ -15,6 +15,9 @@
   @media #{$lg, $md} {
     padding-left: 40px;
   }
+  @media #{$xs,$sm} {
+    padding-left: 15px;
+  }
 }
 
 .tp-main-menu {

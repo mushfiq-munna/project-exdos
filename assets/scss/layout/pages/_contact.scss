@@ -5,6 +5,9 @@
   @media #{$xl} {
     font-size: 85px;
   }
+  @media #{$xs,$sm} {
+    font-size: 70px;
+  }
 }
 
 .tpform-title {

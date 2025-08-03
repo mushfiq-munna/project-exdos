@@ -17,7 +17,7 @@
       <div class="tp-header-area tp-transparent-header pl-50 tp-header-border">
         <div class="container-fluid p-0">
           <div class="row gx-0 align-items-center">
-            <div class="col-xl-2 col-lg-5 col-md-4">
+            <div class="col-xl-2 col-lg-5 col-md-4 col-6">
               <div class="tp-logo">
                 <a href="index.html"
                   ><img src="./assets/img/logo/Logo.svg" alt=""
@@ -25,7 +25,7 @@
               </div>
             </div>
 
-            <div class="col-xl-10 col-lg-7 col-md-8">
+            <div class="col-xl-10 col-lg-7 col-md-8 col-6">
               <div
                 class="tp-header-box d-flex justify-content-xl-between justify-content-end align-items-center"
               >
@@ -54,12 +54,12 @@
                 <div
                   class="tp-header-right d-flex justify-content-end flex-wrap align-items-center"
                 >
-                  <div class="tp-header-search">
+                  <div class="tp-header-search d-none d-md-flex">
                     <button>
                       <i class="flaticon-search"></i>
                     </button>
                   </div>
-                  <div class="tp-header-cta">
+                  <div class="tp-header-cta d-none d-md-flex">
                     <div class="tp-header-cta-icon">
                       <i class="flaticon-phone-book"></i>
                     </div>
@@ -87,7 +87,7 @@
     <main>
       <!-- tp-hero-area start -->
       <section
-        class="tp-hero-area tp-black-bg pt-290 pb-170 p-relative"
+        class="tp-hero-area tp-hero-space tp-black-bg pt-290 pb-170 p-relative"
         style="background-image: url(./assets/img/shape/vector-bg.png)"
       >
         <!-- ------------Shape--------- -->
@@ -160,17 +160,17 @@
 
       <!-- tp-about area start -->
       <section
-        class="tp-about-area pt-130 p-relative fix"
+        class="tp-about-area pt-130 pb-130 p-relative fix"
         style="background-image: url(./assets/img/bg/about-bg.jpg)"
       >
         <div class="tp-about-shape">
           <img
-            class="tp-about-shape-1 p-absolute"
+            class="tp-about-shape-1 p-absolute d-none d-md-block"
             src="./assets/img/shape/about-star-1.png"
             alt=""
           />
           <img
-            class="tp-about-shape-2 p-absolute"
+            class="tp-about-shape-2 p-absolute d-none d-md-block"
             src="./assets/img/shape/about-star-2.png"
             alt=""
           />
@@ -182,8 +182,8 @@
         </div>
 
         <div class="container p-relative z-index-11">
-          <div class="row">
-            <div class="col-md-6 mb-100">
+          <div class="row flex-column-reverse flex-md-row">
+            <div class="col-md-6">
               <div class="tp-about-img mb-100">
                 <img src="./assets/img/about/about-h-1.jpg" alt="" />
               </div>
@@ -206,7 +206,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 mb-100">
+            <div class="col-md-6">
               <div class="tp-about-box pl-42 mb-70">
                 <div class="tp-section-title-wrapper mb-33">
                   <h2 class="tp-section-title mb-20">
@@ -251,7 +251,9 @@
               </div>
               <div class="col-xl-8">
                 <div class="tp-newsletter-box p-relative">
-                  <h2 class="tp-newsletter-back">Newsletter</h2>
+                  <h2 class="tp-newsletter-back d-none d-md-block">
+                    Newsletter
+                  </h2>
                   <form action="#">
                     <div class="tp-newsletter-input p-relative">
                       <input type="email" placeholder="Email Here" />
@@ -795,7 +797,7 @@
             </div>
             <div class="col-md-4">
               <div
-                class="tp-team-nav text-end d-flex justify-content-end align-items-center"
+                class="tp-team-nav text-end d-flex justify-content-start justify-content-md-end align-items-center"
               >
                 <div
                   class="tp-swiper-team-button-prev tp-swiper-team-button tp-rot-180"
@@ -1008,7 +1010,7 @@
         <div class="container">
           <div class="custom-row">
             <div class="cols">
-              <div class="tpfact text-center text-lg-left mb-30">
+              <div class="tpfact text-center text-lg-start mb-40">
                 <div class="tpfact__icon">
                   <span><i class="flaticon-merging"></i></span>
                 </div>
@@ -1019,7 +1021,7 @@
               </div>
             </div>
             <div class="cols">
-              <div class="tpfact text-center text-lg-left mb-30">
+              <div class="tpfact text-center text-lg-start mb-40">
                 <div class="tpfact__icon">
                   <span><i class="flaticon-merging"></i></span>
                 </div>
@@ -1030,7 +1032,7 @@
               </div>
             </div>
             <div class="cols">
-              <div class="tpfact text-center text-lg-left mb-30">
+              <div class="tpfact text-center text-lg-start mb-40">
                 <div class="tpfact__icon">
                   <span><i class="flaticon-merging"></i></span>
                 </div>
@@ -1041,7 +1043,7 @@
               </div>
             </div>
             <div class="cols">
-              <div class="tpfact text-center text-lg-left mb-30">
+              <div class="tpfact text-center text-lg-start mb-30">
                 <div class="tpfact__icon">
                   <span><i class="flaticon-merging"></i></span>
                 </div>
@@ -1057,7 +1059,7 @@
       <!-- Fact Area Ended -->
 
       <!-- Blog Area Started -->
-      <div class="tp-blog-area pt-130 pb-100">
+      <div class="tp-blog-area pt-130 pb-90">
         <div class="container">
           <div class="tp-section-title-wrapper mb-50 text-center">
             <h2 class="tp-section-title mb-20">Recent articles</h2>
@@ -1069,7 +1071,7 @@
           </div>
           <div class="row">
             <div class="col-xl-4 col-lg-4 col-md-6">
-              <div class="tpblog mb-30">
+              <div class="tpblog mb-50">
                 <div class="tpblog__thumb mb-35">
                   <a href="#"
                     ><img src="./assets/img/blog/blog-img-1.png" alt=""
@@ -1104,7 +1106,7 @@
               </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6">
-              <div class="tpblog mb-30">
+              <div class="tpblog mb-50">
                 <div class="tpblog__thumb mb-35">
                   <a href="#"
                     ><img src="./assets/img/blog/blog-img-2.png" alt=""
@@ -1139,7 +1141,7 @@
               </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6">
-              <div class="tpblog mb-30">
+              <div class="tpblog mb-50">
                 <div class="tpblog__thumb mb-35">
                   <a href="#"
                     ><img src="./assets/img/blog/blog-img-3.png" alt=""
@@ -1236,7 +1238,7 @@
       <div class="tp-footer-shape1 p-absolute">
         <img src="./assets/img/shape/footer-shape-1.png" alt="" />
       </div>
-      <div class="tp-footer-shape2 p-absolute">
+      <div class="tp-footer-shape2 p-absolute d-none d-md-block">
         <img src="./assets/img/shape/footer-shape-2.png" alt="" />
       </div>
       <div class="tp-footer-shape3 p-absolute">
@@ -1250,15 +1252,15 @@
         <div class="tp-footer-logo-area pt-130">
           <div class="row align-items-center">
             <div class="col-xl-3 col-lg-3 col-md-4">
-              <div class="footer-logo">
+              <div class="footer-logo mb-30">
                 <a href="#"><img src="./assets/img/logo/Logo.svg" alt="" /></a>
               </div>
             </div>
-            <div class="col-xl-6 col-lg-5 col-md-4">
+            <div class="col-xl-6 col-lg-5 col-md-4 d-none d-md-block">
               <div class="footer-sep"></div>
             </div>
             <div class="col-xl-3 col-lg-4 col-md-4">
-              <div class="tpfooter-social pl-35">
+              <div class="tpfooter-social pl-35 mb-30">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
@@ -1326,7 +1328,9 @@
         <div class="footer-copyright-area pt-40 pb-10">
           <div class="row align-items-center">
             <div class="col-xl-3 col-lg-4">
-              <div class="tp-footer-copyright text-center text-lg-left mb-30">
+              <div
+                class="tp-footer-copyright text-md-center text-lg-left mb-30"
+              >
                 <p>
                   © Copyright 2023 | Alright reserved exdos by
                   <a href="#">Hr Design</a>
@@ -1334,7 +1338,7 @@
               </div>
             </div>
             <div class="col-xl-9 col-lg-8">
-              <div class="tp-footer-menu mb-30 text-center text-lg-end">
+              <div class="tp-footer-menu mb-30 text-md-center text-lg-end">
                 <ul>
                   <li><a href="">career </a></li>
                   <li><a href="">our FAq</a></li>

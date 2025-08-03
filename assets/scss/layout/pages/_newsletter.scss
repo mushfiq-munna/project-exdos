@@ -10,6 +10,12 @@
     @media #{$md} {
       padding: 80px 40px;
     }
+    @media #{$sm} {
+      padding: 50px 20px;
+    }
+    @media #{$xs} {
+      padding: 50px 15px;
+    }
   }
   &-box {
     @media #{$lg} {
@@ -19,6 +25,9 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      @media #{$xs,$sm} {
+        display: block;
+      }
     }
     & input {
       color: #fff;
@@ -36,6 +45,10 @@
 
   &-input {
     width: calc(100% - 210px);
+    @media #{$xs,$sm} {
+      width: 100%;
+      margin-bottom: 20px;
+    }
     & img {
       position: absolute;
       right: 20px;

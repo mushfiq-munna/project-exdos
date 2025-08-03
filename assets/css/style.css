@@ -173,6 +173,11 @@
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 100%;
 }
+@media (max-width: 575px) {
+  .tp-btn-circle {
+    font-size: 45px;
+  }
+}
 
 .tp-sv-btn {
   background: var(--tp-rom-color);
@@ -219,8 +224,19 @@
     font-size: 39px;
   }
 }
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-section-title {
+    font-size: 39px;
+  }
+}
+.tp-section-title br {
+  display: none;
+}
 .tp-section-title-white {
   color: #fff;
+}
+.tp-section-title-wrapper p br {
+  display: none;
 }
 
 * {
@@ -4465,6 +4481,7 @@ img {
 }
 
 .tpblog__thumb a img {
+  width: 100%;
   border-radius: 20px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
@@ -4511,6 +4528,11 @@ img {
   color: #fff;
   opacity: 0.7;
   margin-right: 18px;
+}
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tpfooter-social {
+    padding-left: 0;
+  }
 }
 
 .tp-footer-widget-area {
@@ -4561,7 +4583,7 @@ img {
 .footer-col-3 {
   padding-left: 60px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
   .footer-col-3 {
     padding-left: 0;
   }
@@ -4569,7 +4591,7 @@ img {
 .footer-col-4 {
   padding-left: 35px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
   .footer-col-4 {
     padding-left: 0;
   }
@@ -4587,7 +4609,7 @@ img {
   background-color: #fff;
   opacity: 0.15;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
   .footer-col-3::before, .footer-col-3::after {
     display: none;
   }
@@ -4622,7 +4644,13 @@ img {
   margin-left: 33px;
   position: relative;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-footer-menu ul li {
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
   .tp-footer-menu ul li:first-child {
     padding-left: 0;
     margin-left: 0;
@@ -4679,6 +4707,11 @@ img {
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .tp-header-area {
     padding-left: 40px;
+  }
+}
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-header-area {
+    padding-left: 15px;
   }
 }
 
@@ -4819,6 +4852,12 @@ img {
     padding-left: 90px;
   }
 }
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-hero-space {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+}
 .tp-hero-title {
   color: #ffffff;
   font-size: 110px;
@@ -4840,6 +4879,16 @@ img {
     font-size: 65px;
   }
 }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-hero-title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 575px) {
+  .tp-hero-title {
+    font-size: 45px;
+  }
+}
 .tp-hero-span-1 {
   background: radial-gradient(42.24% 2817.5% at 52.45% 54.17%, rgba(255, 232, 21, 0.95) 0%, #3c7fff 100%);
   -webkit-background-clip: text;
@@ -4851,6 +4900,11 @@ img {
   font-size: 30px;
   display: inline-block;
   transform: translateY(-5px);
+}
+@media (max-width: 575px) {
+  .tp-hero-span-2 {
+    font-size: 16px;
+  }
 }
 .tp-hero-shape-1 {
   left: -37px;
@@ -4927,7 +4981,7 @@ img {
     padding-left: 20px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
   .tp-about-video {
     padding-left: 0px;
   }
@@ -4951,6 +5005,12 @@ img {
     padding-left: 20px;
   }
 }
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-about-img {
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+}
 .tp-about-img img {
   width: 100%;
   border-radius: 20px;
@@ -4960,7 +5020,7 @@ img {
     padding-left: 20px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
   .tp-about-box {
     padding-left: 0px;
   }
@@ -4978,6 +5038,16 @@ img {
     padding: 80px 40px;
   }
 }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-newsletter-bg {
+    padding: 50px 20px;
+  }
+}
+@media (max-width: 575px) {
+  .tp-newsletter-bg {
+    padding: 50px 15px;
+  }
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-newsletter-box {
     margin-top: 30px;
@@ -4987,6 +5057,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-newsletter-box form {
+    display: block;
+  }
 }
 .tp-newsletter-box input {
   color: #fff;
@@ -5010,6 +5085,12 @@ img {
 }
 .tp-newsletter-input {
   width: calc(100% - 210px);
+}
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-newsletter-input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 .tp-newsletter-input img {
   position: absolute;
@@ -5065,6 +5146,11 @@ img {
     font-size: 85px;
   }
 }
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .fs-100 {
+    font-size: 70px;
+  }
+}
 
 .tpform-title {
   font-size: 30px;
@@ -5078,6 +5164,11 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+@media (max-width: 575px) {
+  .custom-row {
+    justify-content: center;
+  }
 }
 
 .tpfact__icon span {
@@ -5103,6 +5194,11 @@ img {
     width: 50%;
   }
 }
+@media (max-width: 575px) {
+  .cols {
+    width: 100%;
+  }
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-project-tab-area {
@@ -5114,7 +5210,20 @@ img {
     padding-right: 0;
   }
 }
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-project-tab-area {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
 
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-project-tab {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 .tp-project-tab button {
   color: #fff;
   font-size: 100px;
@@ -5125,7 +5234,6 @@ img {
   padding-right: 35px;
   transition: 0.3s;
   text-align: left;
-  width: 100%;
 }
 @media only screen and (min-width: 1401px) and (max-width: 1600px) {
   .tp-project-tab button {
@@ -5144,10 +5252,18 @@ img {
     padding-left: 30px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
   .tp-project-tab button {
-    font-size: 90px;
-    padding-left: 40px;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-project-tab button {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 .tp-project-tab button.active {
@@ -5162,9 +5278,16 @@ img {
 .tp-project-tab-thumb img {
   border-radius: 20px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
   .tp-project-tab-content {
     padding-left: 0;
+  }
+}
+
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-services-area {
+    padding: 0;
+    margin-top: 80px;
   }
 }
 
@@ -5218,17 +5341,17 @@ img {
     padding-left: 40px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
   .tp-team-area {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
 .tpteam__thumb img {
   width: 100%;
 }
-@media only screen and (min-width: 1401px) and (max-width: 1600px), only screen and (min-width: 1200px) and (max-width: 1400px) {
+@media only screen and (min-width: 1401px) and (max-width: 1600px), only screen and (min-width: 1200px) and (max-width: 1400px), (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
   .tpteam__info {
     margin-left: 20px;
   }
@@ -5270,6 +5393,11 @@ img {
   font-size: 52px;
 }
 
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-team-nav {
+    margin-bottom: 20px;
+  }
+}
 .tp-team-nav span {
   height: 12px;
   width: 12px;
@@ -5279,9 +5407,19 @@ img {
   margin: 0 10px;
 }
 
+.tp-award-area {
+  padding-top: 0;
+}
+
 .tpaward-wrapper .row .col-md-6:nth-child(even) .tpaward {
   padding-left: 50px;
   border-left: 1px solid #57595c;
+}
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tpaward-wrapper .row .col-md-6:nth-child(even) .tpaward {
+    padding-left: 0;
+    border-left: 0;
+  }
 }
 .tpaward-wrapper .row .col-md-6:first-child .tpaward {
   padding-top: 0;
@@ -5293,10 +5431,21 @@ img {
   padding-bottom: 0;
   border-bottom: 0;
 }
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tpaward-wrapper .row .col-md-6:nth-last-child(-n+2) .tpaward {
+    border-bottom: 1px solid #57595c;
+    padding-bottom: 38px;
+  }
+}
 
 .tpaward {
   border-bottom: 1px solid #57595c;
   padding: 38px 0;
+}
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tpaward {
+    padding-top: 38px !important;
+  }
 }
 .tpaward-wrapper {
   padding-right: 80px;
@@ -5334,6 +5483,16 @@ img {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .tp-testimonial-desc {
     font-size: 50px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-testimonial-desc {
+    font-size: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .tp-testimonial-desc {
+    font-size: 35px;
   }
 }
 .tp-testimonial-name {
@@ -5391,7 +5550,7 @@ img {
   font-size: 52px;
   z-index: 9;
 }
-@media only screen and (min-width: 1401px) and (max-width: 1600px), only screen and (min-width: 1200px) and (max-width: 1400px), only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 1401px) and (max-width: 1600px), only screen and (min-width: 1200px) and (max-width: 1400px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
   .tp-swiper-test-button {
     left: 0;
     top: -45px;
@@ -5406,7 +5565,7 @@ img {
   left: auto;
   right: -100px;
 }
-@media only screen and (min-width: 1401px) and (max-width: 1600px), only screen and (min-width: 1200px) and (max-width: 1400px), only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 1401px) and (max-width: 1600px), only screen and (min-width: 1200px) and (max-width: 1400px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
   .tp-swiper-test-button-next {
     right: 0;
   }

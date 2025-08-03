@@ -7,9 +7,19 @@
   @media #{$md} {
     padding-right: 0;
   }
+  @media #{$xs,$sm} {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 .tp-project {
   &-tab {
+    @media #{$md,$xs,$sm} {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
     & button {
       color: #fff;
       font-size: 100px;
@@ -20,7 +30,6 @@
       padding-right: 35px;
       transition: 0.3s;
       text-align: left;
-      width: 100%;
 
       @media #{$xxlm} {
         font-size: 80px;
@@ -35,9 +44,16 @@
         padding-left: 30px;
       }
 
-      @media #{$md} {
-        font-size: 90px;
-        padding-left: 40px;
+      @media #{$md,$xs,$sm} {
+        font-size: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      @media #{$xs,$sm} {
+        font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
       }
       &.active {
         color: var(--tp-theme-color-2);
@@ -54,7 +70,7 @@
       }
     }
     &-content {
-      @media #{$md} {
+      @media #{$md,$xs,$sm} {
         padding-left: 0;
       }
     }
