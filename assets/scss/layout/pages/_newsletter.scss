@@ -41,6 +41,25 @@
         color: #57595c;
       }
     }
+    &-2 {
+      & input {
+        border-color: #57595c;
+        color: #57595c;
+
+        &:focus {
+          color: #57595c;
+          border-color: #57595c;
+        }
+        @include tp-placeholder {
+          color: #57595c;
+        }
+      }
+
+      & .tp-newsletter-back {
+        color: #eeebe6;
+        opacity: 1;
+      }
+    }
   }
 
   &-input {
@@ -53,6 +72,12 @@
       position: absolute;
       right: 20px;
       top: 22px;
+    }
+    & i {
+      position: absolute;
+      right: 20px;
+      top: 22px;
+      color: #57595c;
     }
   }
 

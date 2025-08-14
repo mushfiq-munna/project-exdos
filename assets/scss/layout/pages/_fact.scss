@@ -34,6 +34,26 @@
     opacity: 0.5;
     // margin-top: 30px;
   }
+
+  &-2 {
+    & .tpfact {
+      &__icon {
+        & span {
+          color: #57595c;
+        }
+      }
+      &__text {
+        & span {
+          color: #0a0e1a;
+        }
+      }
+
+      &__title {
+        color: #0a0e1a;
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .cols {

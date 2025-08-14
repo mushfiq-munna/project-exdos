@@ -30,6 +30,15 @@ img {
   z-index: 11;
 }
 
+.bg-pos-end {
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
 .overflow-y-visible {
   overflow-x: hidden;
   overflow-y: visible;
@@ -77,4 +86,10 @@ img {
 .tp-brand-slide-element {
   width: auto;
   display: inline-block;
+}
+
+.br-15 {
+  & img {
+    border-radius: 15px;
+  }
 }

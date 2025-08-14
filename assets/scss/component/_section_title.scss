@@ -1,27 +1,42 @@
 @use "../utils" as *;
 
-.tp-section-title {
-  font-size: 60px;
-  @media #{$lg} {
-    font-size: 54px;
+.tp-section {
+  &-subtitle {
+    font-weight: 500;
+    font-size: 15px;
+    color: #57595c;
+    display: block;
+    & i {
+      height: 10px;
+      width: 10px;
+      background-color: var(--tp-theme-color);
+      border-radius: 30px;
+      display: inline-block;
+    }
   }
-  @media #{$md} {
-    font-size: 39px;
-  }
-  @media #{$xs,$sm} {
-    font-size: 39px;
-  }
+  &-title {
+    font-size: 60px;
+    @media #{$lg} {
+      font-size: 54px;
+    }
+    @media #{$md} {
+      font-size: 39px;
+    }
+    @media #{$xs,$sm} {
+      font-size: 39px;
+    }
 
-  & br {
-    display: none;
-  }
-  &-white {
-    color: #fff;
-  }
-  &-wrapper {
-    & p {
-      & br {
-        display: none;
+    // & br {
+    //   display: none;
+    // }
+    &-white {
+      color: #fff;
+    }
+    &-wrapper {
+      & p {
+        & br {
+          display: none;
+        }
       }
     }
   }

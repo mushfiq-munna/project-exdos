@@ -47,4 +47,33 @@
       padding-left: 0px;
     }
   }
+
+  &-content {
+    & ul {
+      & li {
+        list-style: none;
+        margin-bottom: 20px;
+        & i {
+          color: #000;
+          font-size: 30px;
+          margin-right: 10px;
+        }
+        & span {
+          font-size: 30px;
+          font-family: var(--tp-font-heading);
+          line-height: 1.2;
+          color: #0a0e01;
+        }
+      }
+    }
+  }
+
+  &-circle-img {
+    position: absolute;
+    top: 0;
+    right: 185px;
+    & img {
+      max-width: inherit;
+    }
+  }
 }

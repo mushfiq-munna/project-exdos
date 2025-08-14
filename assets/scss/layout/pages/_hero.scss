@@ -32,6 +32,12 @@
     @media #{$xs} {
       font-size: 45px;
     }
+    &-2 {
+      font-size: 100px;
+      @media #{$xl} {
+        font-size: 85px;
+      }
+    }
   }
   &-span-1 {
     background: radial-gradient(
@@ -115,4 +121,47 @@
       display: inline-block;
     }
   }
+
+  &-desc {
+    & p {
+      color: #b1b4ba;
+      font-size: 30px;
+      display: inline-block;
+      transform: translateY(-5px);
+      font-family: var(--tp-font-heading);
+      margin: 0;
+      margin-right: 60px;
+      @media #{$xs} {
+        font-size: 16px;
+      }
+    }
+  }
+  &-url-bg {
+    width: 30px;
+    height: 65px;
+    background: #fff;
+    opacity: 0.2;
+    display: inline-block;
+  }
+  &-url-box {
+    & a {
+      display: flex;
+      align-items: center;
+    }
+    & i {
+      color: #b1b4ba;
+      font-size: 52px;
+      display: inline-flex;
+      margin-left: -20px;
+    }
+  }
+}
+
+.hero-bg-img {
+  position: absolute;
+  width: 45%;
+  height: calc(100% - 113px);
+  bottom: 0;
+  right: 0;
+  background-size: cover;
 }
