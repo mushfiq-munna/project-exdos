@@ -9,6 +9,11 @@
     );
   });
 
+  // data bg color
+  $("[data-bg-color]").each(function () {
+    $(this).css("background-color", $(this).attr("data-bg-color"));
+  });
+
   $(".popup-img").magnificPopup({
     type: "image",
     // other options
@@ -40,6 +45,21 @@
   var swiper = new Swiper(".tp-brand-top-active", {
     slidesPerView: "auto",
     spaceBetween: 60,
+    freemode: true,
+    centeredSlides: true,
+    loop: true,
+    speed: 4000,
+    allowTouchMove: false,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: false,
+    },
+  });
+
+  // brand title active
+  var swiper = new Swiper(".tp-brand-title-active", {
+    slidesPerView: "auto",
+    spaceBetween: 40,
     freemode: true,
     centeredSlides: true,
     loop: true,

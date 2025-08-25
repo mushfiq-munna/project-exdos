@@ -1,0 +1,24 @@
+@use "../../utils" as *;
+
+.tp-brand-title {
+  & h3 {
+    color: #fff;
+    font-size: 100px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
+
+.radial-bg {
+  background: radial-gradient(
+    54.5% 5715.77% at 47.5% 62%,
+    #0058ff 0%,
+    #ff4c00 100%
+  );
+
+  // background: radial-gradient(
+  //   57.77% 5198.42% at 47.5% 62%,
+  //   #0058ff 0%,
+  //   #ff4c00 100%
+  // );
+}

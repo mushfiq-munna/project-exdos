@@ -38,6 +38,16 @@
         font-size: 85px;
       }
     }
+
+    &-black {
+      color: #0a0e1a;
+      font-size: 100px;
+      & img {
+        margin-left: 48px;
+        margin-right: 48px;
+        transform: translateY(-15px);
+      }
+    }
   }
   &-span-1 {
     background: radial-gradient(
@@ -153,6 +163,34 @@
       font-size: 52px;
       display: inline-flex;
       margin-left: -20px;
+    }
+  }
+
+  &-black {
+    &-content {
+      max-width: 488px;
+      margin-left: 155px;
+    }
+  }
+
+  &-img {
+    flex: 0 0 auto;
+    & img {
+      max-width: inherit;
+    }
+  }
+
+  &-3 {
+    &-shape-2 {
+      right: 100px;
+      border-radius: 100%;
+      bottom: 55px;
+      z-index: 2;
+    }
+    &-shape-1 {
+      right: 60px;
+      top: 137px;
+      z-index: 1;
     }
   }
 }

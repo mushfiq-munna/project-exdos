@@ -12,12 +12,19 @@
 }
 .tpteam {
   &__thumb {
+    position: relative;
     & img {
       width: 100%;
+      transition: 0.3s;
     }
     &-2 {
       margin-left: 10px;
       position: relative;
+      & > a {
+        display: block;
+        overflow: hidden;
+        border-radius: 15px;
+      }
     }
 
     &-border {
@@ -82,6 +89,7 @@
   &__title {
     font-size: 30px;
     margin-bottom: 5px;
+    transition: 0.3s;
     @media #{$xl} {
       font-size: 27px;
     }
@@ -96,6 +104,16 @@
       opacity: 1;
       visibility: visible;
       top: 50%;
+    }
+
+    & .tpteam__thumb-2 {
+      & img {
+        filter: blur(2px);
+      }
+    }
+
+    & .tpteam__title {
+      color: var(--tp-theme-color);
     }
   }
 }

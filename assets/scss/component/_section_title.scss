@@ -9,9 +9,17 @@
     & i {
       height: 10px;
       width: 10px;
-      background-color: var(--tp-theme-color);
+      background: var(--tp-theme-color);
       border-radius: 30px;
       display: inline-block;
+
+      &.dot-orange {
+        background: var(--tp-theme-orange);
+      }
+    }
+
+    &-white {
+      color: #a3aec3;
     }
   }
   &-title {
@@ -37,6 +45,13 @@
         & br {
           display: none;
         }
+      }
+    }
+
+    &-text-white {
+      color: #a3aec3;
+      & b {
+        color: #fff;
       }
     }
   }

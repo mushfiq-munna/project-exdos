@@ -18,6 +18,14 @@
       font-size: 92px;
       color: var(--tp-common-black);
       display: flex;
+      position: relative;
+      z-index: 2;
+    }
+    &-shape {
+      position: absolute;
+      left: 3px;
+      top: -8px;
+      z-index: 1;
     }
   }
 
@@ -53,5 +61,36 @@
   }
   &:hover {
     background-color: var(--tp-rom-color);
+  }
+
+  &-2 {
+    padding: 30px 34px;
+    padding-bottom: 20px;
+    margin-top: -1px;
+    & .tpservices__icon {
+      & span {
+        font-size: 65px;
+        color: var(--tp-common-black);
+        margin-left: 25px;
+      }
+    }
+  }
+
+  &__btn {
+    &-next {
+      & a {
+        font-size: 45px;
+        padding: 0;
+        display: inline-block;
+        transition: 0.3s;
+        & i {
+          transform: none;
+        }
+
+        &:hover {
+          color: var(--tp-theme-orange);
+        }
+      }
+    }
   }
 }
