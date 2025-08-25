@@ -6851,6 +6851,16 @@ img {
   text-transform: uppercase;
   margin: 0;
 }
+.tp-brand-title-border {
+  border-radius: 10px;
+  border: 1px solid #57595c;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -1px;
+  margin-bottom: -1px;
+}
 
 .radial-bg {
   background: radial-gradient(54.5% 5715.77% at 47.5% 62%, #0058ff 0%, #ff4c00 100%);
@@ -6885,6 +6895,55 @@ img {
   display: inline-block;
   line-height: 175px;
   border-radius: 100%;
+}
+
+.tpprice {
+  padding: 50px 50px;
+  border-radius: 20px;
+}
+.tpprice__icon {
+  position: relative;
+  margin-bottom: 4px;
+}
+.tpprice__icon span {
+  font-size: 115px;
+  position: relative;
+  z-index: 1;
+  margin-left: 23px;
+}
+.tpprice__icon-shape {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.tpprice__price h4 {
+  font-size: 70px;
+}
+.tpprice__title {
+  font-size: 30px;
+  font-weight: 400;
+}
+.tpprice__feature {
+  list-style: none;
+}
+.tpprice__feature li {
+  color: #57595c;
+  margin-bottom: 15px;
+}
+.tpprice__feature li i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+.tpprice__feature li span {
+  font-size: 17px;
+}
+.tpprice__sep {
+  border-top: 1px solid #57595c;
+  margin-top: 22px;
+  margin-bottom: 23px;
+}
+.tpprice:hover {
+  border: 1px solid #57595c;
 }
 
 /*# sourceMappingURL=style.css.map */

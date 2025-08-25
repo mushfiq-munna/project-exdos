@@ -7,6 +7,17 @@
     text-transform: uppercase;
     margin: 0;
   }
+
+  &-border {
+    border-radius: 10px;
+    border: 1px solid #57595c;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -1px;
+    margin-bottom: -1px;
+  }
 }
 
 .radial-bg {
@@ -15,10 +26,4 @@
     #0058ff 0%,
     #ff4c00 100%
   );
-
-  // background: radial-gradient(
-  //   57.77% 5198.42% at 47.5% 62%,
-  //   #0058ff 0%,
-  //   #ff4c00 100%
-  // );
 }
