@@ -156,6 +156,16 @@
       }
     }
   }
+
+  &-border {
+    color: #0a0e1a;
+    border: 1px solid #57595c;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-family: var(--tp-font-heading);
+    border-radius: 5px;
+    display: inline-block;
+  }
 }
 
 .tp-sv-btn {
@@ -191,5 +201,20 @@
 
   &-white {
     color: #a3aec3;
+  }
+}
+
+.icon-circle-btn {
+  width: 60px;
+  height: 60px;
+  background: var(--tp-theme-orange);
+  border-radius: 50%;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  font-size: 15px;
+  & i {
+    transform: rotate(-45deg);
   }
 }

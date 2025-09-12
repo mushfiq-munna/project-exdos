@@ -1,1 +1,91 @@
-@use '../../utils' as *;
+@use "../../utils" as *;
+
+.tp-footer-widget-title-white {
+  color: #0a0e1a;
+}
+
+.tp-footer-newsletter {
+  position: relative;
+  & input {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #57595c;
+
+    @include tp-placeholder {
+      color: #57595c;
+    }
+  }
+  & button {
+    position: absolute;
+    right: 0;
+    bottom: 13px;
+    color: #57595c;
+  }
+
+  .form-check-label {
+    font-size: 15px;
+    color: #57595c;
+  }
+  .form-check-input {
+    transfporm: translateY(3px);
+  }
+}
+
+.tp-footer-social {
+  & a {
+    font-size: 20px;
+    color: #57595c;
+    margin-right: 10px;
+  }
+}
+
+.tp-footer-widget-2 {
+  & ul {
+    & li {
+      & a {
+        color: #57595c;
+      }
+    }
+  }
+
+  & .tp-footer-contact-item {
+    & span {
+      color: #57595c;
+    }
+    & h4 {
+      color: #0a0e1a;
+    }
+  }
+
+  & .footer-content {
+    & span {
+      color: #57595c;
+    }
+  }
+}
+
+.footer-2-col-2 {
+  padding-left: 100px;
+}
+.footer-2-col-3 {
+  padding-left: 40px;
+}
+.footer-2-col-4 {
+  padding-left: 80px;
+}
+
+.footer-copyright-area-2 {
+  .tp-footer-copyright p {
+    color: #57595c;
+  }
+  .tp-footer-menu-2 {
+    & ul {
+      & li {
+        & a {
+          color: #57595c;
+          padding-left: 0;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

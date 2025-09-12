@@ -1,1 +1,14 @@
-@use '../../utils' as *;
+@use "../../utils" as *;
+
+.tp-cta-overlay {
+  &::before {
+    content: "";
+    background: #001c52;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    opacity: 0.8;
+  }
+}

@@ -203,3 +203,40 @@
   right: 0;
   background-size: cover;
 }
+
+.ml-m-5 {
+  margin-left: -6px;
+}
+
+.hero-circle-shape {
+  width: 717px;
+  height: 717px;
+  position: absolute;
+  background: #ffe6ce;
+  border-radius: 100%;
+  top: 150px;
+  left: -100px;
+}
+
+.tp-el-shape {
+  right: 0;
+  bottom: 0;
+  img {
+    width: 95%;
+  }
+}
+
+.tp-hero-social-4 {
+  position: absolute;
+  display: flex;
+  transform: rotate(-90deg);
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #0a0e1a;
+  top: 50%;
+  left: 0;
+  font-weight: 500;
+  & span {
+    margin: 0 5px;
+  }
+}
