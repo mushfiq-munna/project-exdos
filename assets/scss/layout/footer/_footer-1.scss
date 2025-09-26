@@ -123,15 +123,15 @@
     & li {
       list-style: none;
       display: inline-block;
-      padding-left: 33px;
-      margin-left: 33px;
+      padding-left: 30px;
+      margin-left: 30px;
       position: relative;
       @media #{$xs,$sm} {
         padding-left: 10px;
         margin-left: 10px;
       }
       &:first-child {
-        @media #{$md,$xs,$sm} {
+        @media #{$xxl,$lg,$md,$xs,$sm} {
           padding-left: 0;
           margin-left: 0;
         }

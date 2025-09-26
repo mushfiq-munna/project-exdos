@@ -10,7 +10,7 @@
     margin-bottom: 10px;
     border-bottom: 1px solid #57595c;
 
-    @include tp-placeholder {
+    @include tp-placeholder() {
       color: #57595c;
     }
   }
@@ -28,6 +28,23 @@
   .form-check-input {
     transfporm: translateY(3px);
   }
+
+  &-2 {
+    & .form-check-label {
+      color: #b1b4ba;
+    }
+
+    & .form-check {
+      & .form-check-input {
+        border: 1px solid #b1b4ba;
+        --bs-form-check-bg: none;
+      }
+    }
+
+    & input {
+      color: #b1b4ba;
+    }
+  }
 }
 
 .tp-footer-social {
@@ -35,6 +52,12 @@
     font-size: 20px;
     color: #57595c;
     margin-right: 10px;
+  }
+  &-2 {
+    & a {
+      margin-right: 15px;
+      color: #b1b4ba;
+    }
   }
 }
 
@@ -63,14 +86,25 @@
   }
 }
 
-.footer-2-col-2 {
-  padding-left: 100px;
+.footer-2-col {
+  &-2 {
+    padding-left: 100px;
+  }
+  &-3 {
+    padding-left: 40px;
+  }
+  &-4 {
+    padding-left: 80px;
+  }
 }
-.footer-2-col-3 {
-  padding-left: 40px;
-}
-.footer-2-col-4 {
-  padding-left: 80px;
+
+.footer-4-col {
+  &-2 {
+    padding-left: 50px;
+  }
+  &-3 {
+    padding-left: 60px;
+  }
 }
 
 .footer-copyright-area-2 {

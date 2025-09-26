@@ -41,6 +41,21 @@
         & span {
           color: #57595c;
         }
+        &-2 {
+          position: relative;
+          & span {
+            color: var(--tp-theme-orange);
+          }
+          &::after {
+            content: "";
+            height: 100px;
+            width: 1px;
+            background-color: #d9d9d9;
+            position: absolute;
+            right: 0;
+            top: 10px;
+          }
+        }
       }
       &__text {
         & span {

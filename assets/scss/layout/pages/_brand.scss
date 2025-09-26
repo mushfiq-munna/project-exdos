@@ -27,3 +27,17 @@
     #ff4c00 100%
   );
 }
+
+.brand-section-title {
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 70px;
+  & h2 {
+    color: #fff;
+    font-size: 30px;
+    margin: 0;
+    background-color: #1a1a1a;
+    padding: 0 30px;
+    display: inline-block;
+    transform: translateY(18px);
+  }
+}
