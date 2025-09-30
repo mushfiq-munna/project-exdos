@@ -106,3 +106,36 @@
   background-color: #d6f0ff;
   border-radius: 140px;
 }
+
+.tp-service-tab {
+  & .nav-links:first-child {
+    border-top: 1px solid #57595c;
+  }
+
+  & .active {
+    & .tpsvtab__title {
+      color: var(--tp-theme-red);
+      transition: 0.3s;
+    }
+  }
+}
+
+.tpsvtab {
+  border-bottom: 1px solid #57595c;
+  padding: 17px 0;
+  padding-bottom: 18px;
+  &__num {
+    margin-top: 12px;
+  }
+
+  &__title {
+    font-size: 100px;
+  }
+
+  &__content {
+    & p {
+      color: #b1b4ba;
+      margin: 0;
+    }
+  }
+}

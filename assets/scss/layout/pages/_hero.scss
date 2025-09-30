@@ -111,6 +111,21 @@
     }
   }
 
+  &-star-shape {
+    &-1 {
+      top: 270px;
+      left: 60px;
+    }
+    &-2 {
+      top: 177px;
+      left: 37%;
+    }
+    &-3 {
+      bottom: 100px;
+      left: 45%;
+    }
+  }
+
   &-info {
     color: #b1b4ba;
     font-size: 15px;
@@ -223,6 +238,12 @@
   bottom: 0;
   img {
     width: 95%;
+  }
+
+  &-5 {
+    & img {
+      width: 98%;
+    }
   }
 }
 

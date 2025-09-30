@@ -30,7 +30,6 @@
 
 .brand-section-title {
   border-bottom: 1px solid #ffffff;
-  margin-bottom: 70px;
   & h2 {
     color: #fff;
     font-size: 30px;
@@ -40,4 +39,9 @@
     display: inline-block;
     transform: translateY(18px);
   }
+}
+
+.tp-brand-normal-wrapper {
+  border: 1px solid #57595c;
+  padding: 80px 75px;
 }

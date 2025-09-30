@@ -159,6 +159,33 @@
 
   &__btn {
   }
+
+  &__tag {
+    font-size: 15px;
+    color: #0a0e1a;
+    font-weight: 500;
+    background: #ffe9c9;
+    padding: 6px 16px;
+    padding-top: 7px;
+    border-radius: 15px;
+    display: inline-block;
+    line-height: 1;
+  }
+
+  &__border {
+    border: 1px solid #57595c;
+  }
+
+  &__logo {
+    min-height: 320px;
+    padding: 30px;
+  }
+
+  &__content-box {
+    padding: 30px;
+    margin-left: -1px;
+    margin-bottom: -1px;
+  }
 }
 
 .tpproject {

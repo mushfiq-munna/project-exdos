@@ -2,12 +2,6 @@
 
 .tpblog {
   &__thumb {
-    & a {
-      & img {
-        width: 100%;
-        border-radius: 20px;
-      }
-    }
   }
   &__content {
     @media #{$lg,$md} {
@@ -77,6 +71,10 @@
     line-height: 1.25;
     @media #{$lg} {
       font-size: 27px;
+    }
+
+    &-2 {
+      font-weight: 400;
     }
   }
   &-2 {

@@ -3,15 +3,18 @@
 .tp-btn {
   color: #fff;
   background-color: var(--tp-theme-color);
-  padding: 15px 42px;
+  padding: 15px 45px;
   font-family: var(--tp-font-heading);
   font-size: 18px;
   border-radius: 5px;
   display: inline-block;
   position: relative;
   overflow: hidden;
+  &-200 {
+    padding: 16px 35px;
+  }
 
-  & i {
+  & > i {
     width: 22px;
     height: 100%;
     background-color: #71a2ff;
@@ -47,7 +50,7 @@
     &-lg {
       padding: 21px 45px;
     }
-    & i {
+    & > i {
       width: 22px;
       height: 100%;
       background-color: #e5cf00;
@@ -98,6 +101,11 @@
     & span {
       transition: all 0.3s ease-out, opacity 0.3s linear;
       display: block;
+      & i {
+        font-size: 15px;
+        transform: rotate(-40deg);
+        margin-left: 5px;
+      }
     }
   }
   &-y-1 {
@@ -123,7 +131,7 @@
     &-lg {
       padding: 21px 45px;
     }
-    & i {
+    & > i {
       width: 22px;
       height: 100%;
       background-color: #ffad8a;
@@ -155,6 +163,10 @@
         display: block;
       }
     }
+  }
+
+  &-red {
+    background-color: var(--tp-theme-red);
   }
 
   &-border {
@@ -216,5 +228,22 @@
   font-size: 15px;
   & i {
     transform: rotate(-45deg);
+  }
+}
+
+.tp-icon-btn {
+  font-size: 45px;
+  color: #57595c;
+  & span {
+    height: 38px;
+    width: 38px;
+    background: #f8f5ff;
+    border-radius: 100%;
+    display: inline-block;
+    display: inline-block;
+    position: absolute;
+    left: 21px;
+    top: 4px;
+    z-index: -1;
   }
 }

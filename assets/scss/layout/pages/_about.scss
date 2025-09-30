@@ -46,6 +46,14 @@
     @media #{$lg,$md,$xs,$sm} {
       padding-left: 0px;
     }
+
+    &-right {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50%;
+      background-color: #fff;
+    }
   }
 
   &-content {
@@ -105,9 +113,19 @@
       }
     }
   }
+
+  &-fact {
+  }
 }
 
 .tp-bg-circle {
   border-radius: 360px;
   margin: 0 100px;
+}
+
+.tp-founder-sep {
+  height: 40px;
+  width: 1px;
+  background: #f83838;
+  margin: 25px auto;
 }
