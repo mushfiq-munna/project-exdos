@@ -7720,6 +7720,11 @@ textarea {
   left: 0;
   z-index: -1;
 }
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .tp-testimonial-shape img {
+    width: 85%;
+  }
+}
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .tp-testimonial-shape {
     top: 50px;

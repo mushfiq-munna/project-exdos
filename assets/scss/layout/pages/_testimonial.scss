@@ -84,6 +84,11 @@
     }
   }
   &-shape {
+    & img {
+      @media #{$xs, $sm, $md} {
+        width: 85%;
+      }
+    }
     position: absolute;
     top: 80px;
     right: 0;
