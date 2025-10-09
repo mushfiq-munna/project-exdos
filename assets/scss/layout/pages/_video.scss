@@ -2,4 +2,10 @@
 
 .tp-video-area {
   padding: 300px 30px;
+  @media #{$lg} {
+    padding: 200px 30px;
+  }
+  @media #{$md,$sm,$xs} {
+    padding: 150px 30px;
+  }
 }

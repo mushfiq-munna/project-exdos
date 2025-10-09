@@ -70,7 +70,10 @@
     font-size: 30px;
     line-height: 1.25;
     @media #{$lg} {
-      font-size: 27px;
+      font-size: 26px;
+    }
+    @media #{$xs} {
+      font-size: 25px;
     }
 
     &-2 {
@@ -90,6 +93,7 @@
       left: 0;
       top: 0;
       & img {
+        width: 100%;
         height: calc(100% + 24px);
         object-fit: cover;
       }
@@ -98,6 +102,7 @@
       padding-left: 228px;
       padding-top: 23px;
       padding-bottom: 23px;
+      padding-right: 15px;
     }
   }
 }

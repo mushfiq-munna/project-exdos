@@ -1,9 +1,16 @@
 @use "../../utils" as *;
 
-.footer-sep {
-  height: 1px;
-  background: #fff;
-  opacity: 0.15;
+.footer {
+  &-logo {
+    @media #{$xs,$sm} {
+      margin-bottom: 30px;
+    }
+  }
+  &-sep {
+    height: 1px;
+    background: #fff;
+    opacity: 0.15;
+  }
 }
 
 .tpfooter-social {
@@ -15,6 +22,9 @@
   @media #{$xs,$sm} {
     padding-left: 0;
   }
+  // @media #{$xs,$sm} {
+  //   margin-bottom: 30px;
+  // }
 }
 
 .tp-footer-widget-area {

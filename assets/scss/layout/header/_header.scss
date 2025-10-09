@@ -11,7 +11,7 @@
 .tp-header-area {
   @media #{$xl} {
     padding-left: 30px;
-    padding-right: 30px;
+    // padding-right: 30px;
   }
   @media #{$lg, $md} {
     padding-left: 40px;
@@ -22,14 +22,22 @@
 }
 
 .tp-main-menu {
+  @media #{$xxlm} {
+    padding-left: 30px;
+  }
   @media #{$xl} {
-    padding-left: 10px;
+    padding-left: 15px;
   }
   & ul {
     & li {
       display: inline-block;
       margin-right: 42px;
       position: relative;
+
+      @media screen and (min-width: 1600px) and (max-width: 1800px) {
+        margin-right: 25px;
+      }
+
       @media #{$xxlm} {
         margin-right: 27px;
       }
@@ -120,6 +128,24 @@
 }
 
 .tp-header {
+  &-space {
+    @media #{$xxlm} {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    @media #{$xl, $lg} {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    @media #{$md} {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media #{$sm, $xs} {
+      padding: 10px 15px;
+    }
+  }
   &-border {
     border-bottom: 1px solid #ffffff15;
   }
@@ -139,16 +165,16 @@
   &-cta {
     display: flex;
     align-items: center;
-    padding: 28px 40px;
+    padding: 23px 40px;
     border-left: 1px solid #ffffff15;
 
     @media #{$xl} {
-      padding: 28px 25px;
+      padding: 26px 25px;
     }
 
-    // @media #{$xl,$xxlm,$xxl} {
-    //   padding: 22px 23px;
-    // }
+    @media #{$xl,$xxlm,$xxl} {
+      padding: 22px 25px;
+    }
 
     & i {
       font-size: 30px;
@@ -173,13 +199,17 @@
   &-bar {
     & button {
       background-color: #23252d;
-      padding: 20px 25px;
+      padding: 25px 30px;
       display: flex;
       align-items: center;
 
-      // @media #{$xl,$xxlm,$xxl} {
-      //   padding: 24px 36px;
-      // }
+      @media #{$md} {
+        padding: 25px 35px;
+      }
+      @media #{$xl, $lg, $xxlm,$xxl} {
+        padding: 28px 36px;
+      }
+
       & i {
         color: #fff;
         font-size: 52px;
@@ -220,5 +250,17 @@
         background: #f2ddd1;
       }
     }
+  }
+}
+
+.tp-header-toggle {
+  & button {
+    background-color: #23252d;
+    padding: 11px 16px;
+    display: flex;
+    align-items: center;
+    font-size: 43px;
+    color: #fff;
+    border-radius: 10px;
   }
 }

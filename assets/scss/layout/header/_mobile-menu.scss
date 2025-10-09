@@ -1,0 +1,58 @@
+@use "../../utils" as *;
+
+.tp-offcanvas-menu {
+  & ul {
+    list-style: none;
+    & li {
+      position: relative;
+      & a {
+        padding: 9px 0;
+        display: block;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+
+      &:not(:last-child) {
+        & a {
+          border-bottom: 1px solid rgba(1, 15, 28, 0.1);
+        }
+      }
+
+      &.active {
+        & > a {
+          color: var(--tp-theme-color);
+        }
+
+        & > .tp-menu-close {
+          border-color: var(--tp-theme-color);
+          color: #fff;
+          background-color: var(--tp-theme-color);
+          & i {
+            transform: rotate(90deg);
+          }
+        }
+      }
+
+      & .sub-menu {
+        display: none;
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+.tp-menu-close {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  height: 30px;
+  width: 30px;
+  border: 1px solid rgba(1, 15, 28, 0.12);
+  text-align: center;
+  font-size: 13px;
+  line-height: 29px;
+  transition: 0.3s;
+  & i {
+    transition: 0.3s;
+  }
+}

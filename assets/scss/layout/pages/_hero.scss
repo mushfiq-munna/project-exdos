@@ -2,13 +2,33 @@
 
 .tp-hero {
   @media #{$xxlm} {
-    padding-left: 90px;
+    padding-left: 40px;
+  }
+  @media #{$sm} {
+    padding-left: 20px;
+  }
+  @media #{$xs} {
+    padding-left: 30px;
   }
 
   &-space {
     @media #{$xs,$sm} {
       padding-top: 200px;
       padding-bottom: 100px;
+    }
+    &-2 {
+      @media #{$md} {
+        padding-bottom: 0;
+        padding-top: 180px;
+      }
+      @media #{$sm} {
+        padding-bottom: 0;
+        padding-top: 170px;
+      }
+      @media #{$xs} {
+        padding-bottom: 0;
+        padding-top: 150px;
+      }
     }
   }
   &-title {
@@ -34,8 +54,30 @@
     }
     &-2 {
       font-size: 100px;
+      @media #{$xxlm} {
+        font-size: 95px;
+      }
       @media #{$xl} {
         font-size: 85px;
+      }
+      @media #{$lg} {
+        font-size: 75px;
+      }
+      @media #{$md} {
+        font-size: 90px;
+      }
+      @media #{$sm} {
+        font-size: 70px;
+      }
+      @media #{$xs} {
+        font-size: 50px;
+      }
+
+      & img {
+        @media #{$xs} {
+          width: 10%;
+          height: auto;
+        }
       }
     }
 
@@ -212,11 +254,29 @@
 
 .hero-bg-img {
   position: absolute;
-  width: 45%;
-  height: calc(100% - 113px);
+  width: 43%;
+  height: calc(100% - 102px);
   bottom: 0;
   right: 0;
   background-size: cover;
+  @media #{$md} {
+    position: static;
+    width: 100%;
+    height: 600px;
+    margin-top: 30px;
+  }
+  @media #{$sm} {
+    position: static;
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+  }
+  @media #{$xs} {
+    position: static;
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+  }
 }
 
 .ml-m-5 {

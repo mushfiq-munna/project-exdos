@@ -64,7 +64,7 @@
 
   &-input {
     width: calc(100% - 210px);
-    @media #{$xs,$sm} {
+    @media #{$xs,$sm,$lg} {
       width: 100%;
       margin-bottom: 20px;
     }

@@ -11,6 +11,7 @@
   }
 }
 .tpteam {
+  padding: 10px;
   &__thumb {
     position: relative;
     & img {
@@ -60,11 +61,13 @@
     }
   }
   &__info {
-    @media #{$xxlm, $xl, $xs, $sm} {
-      margin-left: 20px;
-    }
-    @media #{$lg} {
-      margin-left: 40px;
+    &.ml-70 {
+      @media #{$xxlm, $xl, $xs, $sm} {
+        margin-left: 20px;
+      }
+      @media #{$lg} {
+        margin-left: 40px;
+      }
     }
     & span {
       color: #57595c;
@@ -113,6 +116,12 @@
     transition: 0.3s;
     @media #{$xl} {
       font-size: 27px;
+    }
+
+    &-2 {
+      @media #{$lg} {
+        font-size: 23px;
+      }
     }
   }
   &__subtitle {

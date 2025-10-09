@@ -92,6 +92,10 @@
     opacity: 0;
     visibility: hidden;
     transition: 0.3s;
+    @media #{$lg, $md, $sm, $xs} {
+      left: 60px;
+      bottom: 50px;
+    }
     & span {
       background-color: #fff;
       padding: 12px 20px;
@@ -99,6 +103,14 @@
       text-transform: uppercase;
       font-weight: 500;
       display: inline-block;
+      @media #{$xl} {
+        padding: 10px 15px;
+        font-size: 13px;
+      }
+      @media #{$lg} {
+        padding: 10px 15px;
+        font-size: 11px;
+      }
     }
   }
   &__title {
@@ -107,12 +119,23 @@
     font-size: 30px;
     margin: 0;
     margin-top: 5px;
+    @media #{$xl} {
+      padding: 10px 15px;
+      font-size: 25px;
+    }
+    @media #{$lg, $md, $sm, $xs} {
+      padding: 10px 15px;
+      font-size: 20px;
+    }
   }
   &:hover {
     & .tpportfolio__text {
       opacity: 1;
       visibility: visible;
       bottom: 80px;
+      @media #{$lg, $md, $sm, $xs} {
+        bottom: 60px;
+      }
     }
   }
 }

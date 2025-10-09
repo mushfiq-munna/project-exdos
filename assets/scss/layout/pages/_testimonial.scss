@@ -3,6 +3,15 @@
 .tp-testimonial {
   &-main-wrapper {
     margin-left: -56px;
+    @media #{$xl} {
+      margin-left: -35px;
+    }
+    @media #{$lg} {
+      margin-left: -15px;
+    }
+    @media #{$md, $sm, $xs} {
+      margin-left: 0px;
+    }
   }
   &-desc {
     font-size: 100px;
@@ -27,9 +36,34 @@
   &-text {
     font-size: 60px;
     color: #fff;
+
+    @media #{$xl} {
+      font-size: 50px;
+    }
+    @media #{$lg} {
+      font-size: 45px;
+    }
+    @media #{$md} {
+      font-size: 33px;
+    }
+    @media #{$sm} {
+      font-size: 25px;
+    }
+    @media #{$xs} {
+      font-size: 20px;
+    }
     & i {
       color: var(--tp-theme-color-2);
       font-size: 42px;
+      @media #{$md} {
+        font-size: 32px;
+      }
+      @media #{$sm} {
+        font-size: 24px;
+      }
+      @media #{$xs} {
+        font-size: 20px;
+      }
     }
   }
   &-name {
@@ -85,13 +119,41 @@
   }
 
   &-author {
+    & img {
+      @media #{$xs} {
+        max-width: 70%;
+      }
+    }
+    @media #{$xs} {
+      margin-right: 0;
+    }
     &-name {
       font-size: 30px;
       color: #fff;
+      @media #{$sm} {
+        font-size: 25px;
+      }
+      @media #{$xs} {
+        font-size: 15px;
+        line-height: 1.5;
+      }
     }
     &-desig {
       font-size: 17px;
       color: rgba(255, 255, 255, 0.8);
+      @media #{$sm} {
+        font-size: 15px;
+      }
+      @media #{$xs} {
+        font-size: 10px;
+        line-height: 0;
+      }
+    }
+  }
+
+  &-title {
+    @media #{$lg} {
+      margin-left: 20px;
     }
   }
 }
@@ -101,6 +163,15 @@
   display: inline-block;
   color: var(--tp-theme-color-2);
   font-size: 42px;
+  @media #{$md} {
+    font-size: 32px;
+  }
+  @media #{$sm} {
+    font-size: 24px;
+  }
+  @media #{$xs} {
+    font-size: 20px;
+  }
 }
 
 .tp-swiper-test-button {
@@ -140,11 +211,46 @@
   transform: rotate(180deg);
 }
 
+// .tp-test-slider-arrow-2 {
+//   position: absolute;
+//   bottom: 25px;
+//   left: 500px;
+//   opacity: 0.5;
+//   & span {
+//     height: 12px;
+//     width: 12px;
+//     display: inline-block;
+//     background-color: #dbdbdb;
+//     border-radius: 100%;
+//     margin: 0 10px;
+//   }
+// }
+
+.tp-swiper-test-2-button {
+  color: #fff;
+  font-size: 52px;
+  display: inline-block;
+  z-index: 9;
+  opacity: 0.5;
+  @media #{$sm} {
+    font-size: 40px;
+  }
+  @media #{$xs} {
+    font-size: 30px;
+  }
+}
+
 .tp-test-slider-arrow-2 {
   position: absolute;
   bottom: 25px;
   left: 500px;
-  opacity: 0.5;
+  @media #{$sm} {
+    left: 410px;
+  }
+  @media #{$xs} {
+    left: 260px;
+    bottom: 15px;
+  }
   & span {
     height: 12px;
     width: 12px;
@@ -152,5 +258,29 @@
     background-color: #dbdbdb;
     border-radius: 100%;
     margin: 0 10px;
+    opacity: 0.5;
+  }
+}
+
+.tp-testimonial-author-info {
+  align-items: center;
+  @media #{$xxl, $xxlm} {
+    margin-left: 62px;
+  }
+  @media #{$xl} {
+    margin-left: 61px;
+  }
+  @media #{$lg} {
+    margin-left: 78px;
+  }
+  @media #{$md} {
+    margin-left: 48px;
+  }
+
+  @media #{$sm} {
+    margin-left: 40px;
+  }
+  @media #{$xs} {
+    margin-left: 0px;
   }
 }
