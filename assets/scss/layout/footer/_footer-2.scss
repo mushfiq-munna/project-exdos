@@ -89,12 +89,21 @@
 .footer-2-col {
   &-2 {
     padding-left: 100px;
+    @media #{$lg, $md, $sm, $xs} {
+      padding-left: 0;
+    }
   }
   &-3 {
     padding-left: 40px;
+    @media #{$lg, $md, $sm, $xs} {
+      padding-left: 0;
+    }
   }
   &-4 {
     padding-left: 80px;
+    @media #{ $sm, $xs} {
+      padding-left: 0;
+    }
   }
 }
 

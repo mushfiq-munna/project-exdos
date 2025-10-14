@@ -15,11 +15,11 @@
     <!-- ------header start------ -->
     <header>
       <div
-        class="tp-header-area tp-transparent-header pl-100 pr-100 tp-header-border"
+        class="tp-header-area tp-header-space tp-header-space-3 tp-transparent-header pl-100 pr-100 tp-header-border"
       >
         <div class="container-fluid p-0">
           <div class="row gx-0 align-items-center">
-            <div class="col-xl-2 col-lg-5 col-md-4 col-6">
+            <div class="col-xl-2 col-6">
               <div class="tp-logo">
                 <a href="index.html"
                   ><img src="./assets/img/logo/logo-black.png" alt=""
@@ -27,12 +27,12 @@
               </div>
             </div>
 
-            <div class="col-xl-8 col-lg-7 col-md-8 col-6">
+            <div class="col-xl-8 col-lg-7 col-md-8 col-6 d-none d-xl-block">
               <div
                 class="tp-header-box d-flex justify-content-center align-items-center"
               >
                 <div class="tp-main-menu tp-main-menu-black d-none d-xl-block">
-                  <nav>
+                  <nav class="tp-mobile-menu-active">
                     <ul>
                       <li>
                         <a href="#">Home</a>
@@ -48,14 +48,13 @@
                       <li><a href="#">Portfolio</a></li>
                       <li><a href="#">Pages</a></li>
                       <li><a href="#">Blog</a></li>
-                      <li><a href="#">Contact</a></li>
                     </ul>
                   </nav>
                 </div>
               </div>
             </div>
 
-            <div class="col-xl-2">
+            <div class="col-xl-2 col-6">
               <div
                 class="tp-header-right tp-header-right-black d-flex justify-content-end flex-wrap align-items-center"
               >
@@ -69,7 +68,7 @@
                 <span class="sep-vr"></span>
 
                 <div class="tp-header-bar">
-                  <button>
+                  <button class="tp-offcanvas-toggle">
                     <i class="flaticon-menu"></i>
                   </button>
                 </div>
@@ -81,6 +80,69 @@
     </header>
     <!-- ------header end------ -->
 
+    <!-- ------offcanvas start------ -->
+    <div class="tp-offcanvas">
+      <div class="tp-offcanvas-wrapper">
+        <div
+          class="tp-offcanvas-header d-flex align-items-center justify-content-between mb-90"
+        >
+          <div class="tp-offcanvas-logo">
+            <a href="index.html"
+              ><img src="./assets/img/logo/logo-black.png" alt=""
+            /></a>
+          </div>
+          <div class="tp-offcanvas-close">
+            <button class="tp-offcanvas-close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="tp-offcanvas-menu d-xl-none mb-50">
+          <nav></nav>
+        </div>
+
+        <div class="tp-offcanvas-content mb-50 d-none d-xl-block">
+          <h2 class="tp-offcanvas-title">Hello There!</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+
+        <div class="tp-offcanvas-gallery w-img mb-50">
+          <a class="popup-img" href="./assets/img/project/showcase-thumb-01.jpg"
+            ><img src="./assets/img/project/showcase-thumb-01.jpg" alt=""
+          /></a>
+          <a class="popup-img" href="./assets/img/project/showcase-thumb-02.jpg"
+            ><img src="./assets/img/project/showcase-thumb-02.jpg" alt=""
+          /></a>
+          <a class="popup-img" href="./assets/img/project/showcase-thumb-03.jpg"
+            ><img src="./assets/img/project/showcase-thumb-03.jpg" alt=""
+          /></a>
+          <a class="popup-img" href="./assets/img/project/showcase-thumb-04.jpg"
+            ><img src="./assets/img/project/showcase-thumb-04.jpg" alt=""
+          /></a>
+        </div>
+
+        <div class="tp-offcanvas-contact mb-50">
+          <h3 class="tp-offcanvas-title-sm text-upper">Information</h3>
+          <span><a href="#">+420770-1007</a></span>
+          <span><a href="#">hello@exdos.com</a></span>
+          <span><a href="#">Avenue de Roma158b, Lisbaa</a></span>
+        </div>
+
+        <div class="tp-offcanvas-social">
+          <h3 class="tp-offcanvas-title-sm text-upper">Follow us</h3>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tp-offcanvas-overlay"></div>
+
+    <!-- ------offcanvas end------ -->
+
     <!-- ------mainSection start------ -->
 
     <main>
@@ -91,7 +153,7 @@
       >
         <!-- ------------Shape--------- -->
 
-        <div class="tp-hero-shape">
+        <div class="tp-hero-shape d-none d-sm-block">
           <img
             class="tp-hero-3-shape-1 p-absolute"
             src="./assets/img/hero/hero-3-shape-2.png"
@@ -108,7 +170,7 @@
           <div class="row">
             <div class="col-xl-12">
               <div class="tp-hero-wrapper d-flex">
-                <div class="tp-hero-img ml-25 mr-70">
+                <div class="tp-hero-img d-none d-md-block ml-25 mr-70">
                   <img src="./assets/img/hero/hero-3-shape-1.png" alt="" />
                 </div>
 
@@ -143,21 +205,23 @@
       <!-- tp-hero-area end -->
 
       <!-- tp-servicesarea started -->
-      <section class="tp-services-area pt-130 pb-130 pr-100 pl-100">
+      <section class="tp-services-area pt-130 pb-130">
         <div class="container">
           <div class="row align-items-end">
-            <div class="col-xl-8">
+            <div class="col-xl-8 col-lg-12">
               <div class="tp-section-title-wrapper mb-50">
                 <span class="tp-section-subtitle mb-10 text-upper"
                   ><i class="dot-orange"></i> what we offer</span
                 >
-                <h2 class="tp-section-title text-upper mb-20">
+                <h2
+                  class="tp-section-title tp-section-title-3 text-upper mb-20"
+                >
                   Elevate Your Business <br />
                   by our service
                 </h2>
               </div>
               <div class="row g-0">
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6 col-md-6">
                   <div class="tpservices tpservices-2 d-flex br-24">
                     <div class="tpservices__icon p-relative mt-13 mr-20 mb-25">
                       <span><i class="flaticon-geometric-1"></i></span>
@@ -183,7 +247,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6 col-md-6">
                   <div class="tpservices tpservices-2 d-flex br-24">
                     <div class="tpservices__icon p-relative mt-13 mr-20 mb-25">
                       <span><i class="flaticon-geometric-2"></i></span>
@@ -209,7 +273,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6 col-md-6">
                   <div class="tpservices tpservices-2 d-flex br-24">
                     <div class="tpservices__icon p-relative mt-13 mr-20 mb-25">
                       <span><i class="flaticon-geometric"></i></span>
@@ -235,7 +299,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6 col-md-6">
                   <div class="tpservices tpservices-2 d-flex br-24">
                     <div class="tpservices__icon p-relative mt-13 mr-20 mb-25">
                       <span><i class="flaticon-geometric-3"></i></span>
@@ -263,7 +327,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-12 d-none d-xl-block">
               <div class="tpservices__thumb br-15">
                 <img src="./assets/img/services/service-3-img.jpg" alt="" />
               </div>
@@ -275,7 +339,7 @@
 
       <!-- tp-about area start -->
       <section
-        class="tp-about-area pt-130 pb-130 p-relative fix"
+        class="tp-about-area pt-130 pb-80 p-relative fix"
         style="background-image: url(./assets/img/bg/about-bg.jpg)"
       >
         <div class="tp-about-shape">
@@ -293,18 +357,22 @@
 
         <div class="container">
           <div class="row">
-            <div class="col-md-7">
-              <div class="tp-about-thumb ml-60 mr-80 text-center p-relative">
+            <div class="col-xl-7 col-lg-6 col-md-12">
+              <div
+                class="tp-about-thumb ml-60 mr-80 mb-50 text-center p-relative"
+              >
                 <img src="./assets/img/about/duck-head.png" alt="" />
                 <div class="tp-about-circle"></div>
               </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-xl-5 col-lg-6 col-md-12 z-index-11">
               <div class="tp-section-title-wrapper mb-50">
                 <span class="tp-section-subtitle mb-10 text-upper"
                   ><i class="dot-orange"></i> our company</span
                 >
-                <h2 class="tp-section-title text-upper mb-20">
+                <h2
+                  class="tp-section-title tp-section-title-3 text-upper mb-20"
+                >
                   Focus on work Value People over Pageviews
                 </h2>
               </div>
@@ -401,7 +469,7 @@
                   </div>
                 </div>
               </div>
-              <div class="tp-about-btn mt-50">
+              <div class="tp-about-btn mt-50 mb-50">
                 <a href="#" class="tp-btn-orange">
                   <span class="tp-btn-orange-wrap">
                     <span class="tp-btn-y-1">Discover More</span>
@@ -418,7 +486,7 @@
 
       <!-- brand area started -->
 
-      <div class="tp-brand-area radial-bg pt-40 pb-40">
+      <div class="tp-brand-area radial-bg pt-40 pb-35">
         <div class="tp-brand-wrapper">
           <div class="swiper tp-brand-title-active">
             <div class="swiper-wrapper tp-slide-transition">
@@ -551,25 +619,25 @@
 
       <!-- project section started -->
       <section
-        class="tp-project-tab-area tp-nblue-bg pt-130 pb-130 pr-100"
+        class="tp-project-tab-area tp-project-tab-area-3 tp-nblue-bg pt-130 pb-130"
         data-background="./assets/img/bg/project-01-h3.png"
       >
         <div class="container">
           <div class="row align-items-end">
-            <div class="col-lg-7">
+            <div class="col-xl-7 col-lg-12">
               <div class="tp-section-title-wrapper mb-60">
                 <span
                   class="tp-section-subtitle tp-section-subtitle-white mb-10 text-upper"
                   ><i class="dot-orange"></i> recent showcase</span
                 >
                 <h2
-                  class="tp-section-title tp-section-title-white text-upper mb-20"
+                  class="tp-section-title tp-section-title-3 tp-section-title-white text-upper mb-20"
                 >
                   our latest project & portfolio
                 </h2>
               </div>
             </div>
-            <div class="col-lg-5">
+            <div class="col-xl-5 col-lg-12">
               <div class="tp-section-title-wrapper mb-60 pb-15">
                 <p class="tp-section-title-text-white">
                   Per ipsum ultrices sollicitud platea facilisi Semper aliquam
@@ -581,13 +649,13 @@
             </div>
           </div>
 
-          <div class="row g-0 align-items-center">
+          <div class="row showcase-row-item g-0 align-items-center">
             <div class="col-lg-6">
-              <div class="tpshowcase__thumb br-20">
+              <div class="tpshowcase__thumb w-img br-20">
                 <img src="./assets/img/project/project-01.jpg" alt="" />
               </div>
             </div>
-            <div class="offset-xl-1 col-lg-5">
+            <div class="offset-xl-1 offset-lg-1 col-lg-5">
               <div class="tpshowcase pl-10">
                 <div class="tpshowcase__number mb-30">
                   <span>01</span>
@@ -605,8 +673,11 @@
                 </div>
               </div>
             </div>
-
-            <div class="offset-xl-1 col-lg-5">
+          </div>
+          <div
+            class="row showcase-row-item g-0 align-items-center flex-column-reverse flex-xl-row"
+          >
+            <div class="offset-xl-1 offset-lg-1 col-lg-5">
               <div class="tpshowcase pl-10">
                 <div class="tpshowcase__number mb-30">
                   <span>02</span>
@@ -629,17 +700,18 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="tpshowcase__thumb br-20">
+              <div class="tpshowcase__thumb w-img br-20">
                 <img src="./assets/img/project/project-02.jpg" alt="" />
               </div>
             </div>
-
+          </div>
+          <div class="row showcase-row-item g-0 align-items-center">
             <div class="col-lg-6">
-              <div class="tpshowcase__thumb br-20">
+              <div class="tpshowcase__thumb w-img br-20">
                 <img src="./assets/img/project/project-03.jpg" alt="" />
               </div>
             </div>
-            <div class="offset-xl-1 col-lg-5">
+            <div class="offset-xl-1 offset-lg-1 col-lg-5">
               <div class="tpshowcase pl-10">
                 <div class="tpshowcase__number mb-30">
                   <span>03</span>
@@ -833,7 +905,7 @@
       </section>
       <!-- pricing area ended -->
 
-      <div class="solid-bg">
+      <div class="solid-bg w-img">
         <img src="./assets/img/bg/solid-bg.jpg" alt="" />
       </div>
 
@@ -842,45 +914,47 @@
         <div class="container">
           <div class="row">
             <div class="col-xl-6">
-              <div class="tp-section-title-wrapper mb-60">
+              <div class="tp-section-title-wrapper pr-80 mb-60">
                 <span class="tp-section-subtitle mb-10 text-upper"
                   ><i class="dot-orange"></i> trusted clients</span
                 >
-                <h2 class="tp-section-title text-upper mb-20">
+                <h2
+                  class="tp-section-title tp-section-title-3 text-upper mb-20"
+                >
                   Popular company love us for our best service
                 </h2>
               </div>
             </div>
 
             <div class="col-xl-6">
-              <div class="tp-brand-logo-wrapper pl-80">
+              <div class="tp-brand-logo-wrapper">
                 <div class="row g-0">
-                  <div class="col-lg-6">
+                  <div class="col-lg-6 col-md-6">
                     <div class="tp-brand-title-border">
                       <img src="./assets/img/brand/home-3-brand-1.png" alt="" />
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-6 col-md-6">
                     <div class="tp-brand-title-border">
                       <img src="./assets/img/brand/brand-y-1.png" alt="" />
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-6 col-md-6">
                     <div class="tp-brand-title-border">
                       <img src="./assets/img/brand/home-3-brand-2.png" alt="" />
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-6 col-md-6">
                     <div class="tp-brand-title-border">
                       <img src="./assets/img/brand/brand-y-4.png" alt="" />
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-6 col-md-6">
                     <div class="tp-brand-title-border">
                       <img src="./assets/img/brand/home-3-brand-3.png" alt="" />
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-6 col-md-6">
                     <div class="tp-brand-title-border">
                       <img src="./assets/img/brand/home-3-brand-4.png" alt="" />
                     </div>
@@ -1201,7 +1275,7 @@
           <div class="row align-items-center">
             <div class="col-xl-4 col-lg-4">
               <div
-                class="tp-footer-copyright text-md-start text-lg-start mb-30"
+                class="tp-footer-copyright text-md-center text-lg-start mb-30"
               >
                 <p>
                   © Copyright 2023 | Alright reserved by
@@ -1210,14 +1284,14 @@
               </div>
             </div>
 
-            <div class="col-xl-4 col-lg-4">
-              <div class="footer-logo mb-30 text-center">
+            <div class="col-xl-4 col-lg-3">
+              <div class="footer-logo mb-30 text-md-center">
                 <a href="#"
                   ><img src="./assets/img/logo/logo-black.png" alt=""
                 /></a>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-8">
+            <div class="col-xl-4 col-lg-5">
               <div
                 class="tp-footer-menu tp-footer-menu-2 mb-30 text-md-center text-lg-end"
               >

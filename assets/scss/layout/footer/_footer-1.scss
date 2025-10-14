@@ -136,10 +136,15 @@
       padding-left: 30px;
       margin-left: 30px;
       position: relative;
-      @media #{$xs,$sm} {
+      @media #{$xs,$sm, $lg, $md} {
         padding-left: 10px;
         margin-left: 10px;
       }
+      @media #{$xl} {
+        padding-left: 15px;
+        margin-left: 15px;
+      }
+
       &:first-child {
         @media #{$xxl,$lg,$md,$xs,$sm} {
           padding-left: 0;

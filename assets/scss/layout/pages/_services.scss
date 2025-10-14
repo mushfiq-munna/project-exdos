@@ -35,6 +35,9 @@
     @media #{$xl} {
       font-size: 28px;
     }
+    @media #{$md} {
+      font-size: 25px;
+    }
   }
   &__text {
     & p {

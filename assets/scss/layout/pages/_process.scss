@@ -2,6 +2,11 @@
 
 .tpprocess {
   padding: 60px 35px;
+  & p {
+    @media #{$lg} {
+      font-size: 15px;
+    }
+  }
 
   &-padding {
     padding: 0;
@@ -32,6 +37,9 @@
 
   &__title {
     font-size: 30px;
+    @media #{$lg} {
+      font-size: 25px;
+    }
   }
 
   &__icon {

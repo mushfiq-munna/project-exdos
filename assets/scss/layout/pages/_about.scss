@@ -99,9 +99,16 @@
   }
 
   &-thumb {
+    @media #{$sm,$xs} {
+      margin-left: 0;
+      margin-right: 0;
+    }
     & img {
       position: relative;
       z-index: 99;
+      @media #{$xl, $lg, $sm, $xs} {
+        width: 95%;
+      }
     }
   }
 
@@ -112,6 +119,26 @@
     position: absolute;
     bottom: 0;
     border-radius: 100%;
+
+    @media #{$xl} {
+      width: 570px;
+      height: 575px;
+      right: -30px;
+    }
+    @media #{$lg} {
+      width: 400px;
+      height: 400px;
+    }
+    @media #{$sm} {
+      width: 500px;
+      height: 500px;
+      right: 0px;
+    }
+    @media #{$xs} {
+      width: 350px;
+      height: 350px;
+      right: -5px;
+    }
   }
 
   &-3 {

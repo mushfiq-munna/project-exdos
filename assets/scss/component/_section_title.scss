@@ -31,7 +31,19 @@
       font-size: 39px;
     }
     @media #{$xs,$sm} {
-      font-size: 39px;
+      font-size: 36px;
+    }
+
+    &-3 {
+      @media #{$xl} {
+        font-size: 53px;
+      }
+      @media #{$lg} {
+        font-size: 53px;
+      }
+      @media #{$md} {
+        font-size: 45px;
+      }
     }
 
     // & br {
@@ -45,6 +57,10 @@
         & br {
           display: none;
         }
+      }
+
+      @media #{ $sm, $xs} {
+        padding-right: 0;
       }
     }
 

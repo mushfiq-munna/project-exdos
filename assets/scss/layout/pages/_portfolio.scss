@@ -11,6 +11,10 @@
     padding-right: 15px;
     padding-left: 15px;
   }
+  &-3 {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 .tp-project {
   &-tab {
@@ -141,6 +145,11 @@
 }
 
 .tpshowcase {
+  &__thumb {
+    @media #{$md, $sm, $xs} {
+      margin-bottom: 30px;
+    }
+  }
   &__number {
     & span {
       color: #a3aec3;
@@ -177,6 +186,13 @@
       color: #fff;
       font-size: 40px;
       font-weight: 400;
+
+      @media #{$lg} {
+        font-size: 35px;
+      }
+      @media #{$xs} {
+        font-size: 30px;
+      }
     }
   }
 
@@ -242,4 +258,10 @@
 
 .tp-project-active-margin {
   margin: 0 -100px;
+}
+
+.showcase-row-item {
+  @media #{$md, $sm, $xs} {
+    margin-bottom: 30px;
+  }
 }

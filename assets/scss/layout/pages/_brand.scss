@@ -6,6 +6,18 @@
     font-size: 100px;
     text-transform: uppercase;
     margin: 0;
+    @media #{$lg} {
+      font-size: 80px;
+    }
+    @media #{$md} {
+      font-size: 60px;
+    }
+    @media #{$sm} {
+      font-size: 50px;
+    }
+    @media #{$xs} {
+      font-size: 40px;
+    }
   }
 
   &-border {

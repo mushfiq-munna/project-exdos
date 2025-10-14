@@ -145,6 +145,11 @@
     @media #{$sm, $xs} {
       padding: 10px 15px;
     }
+    &-3 {
+      @media #{$lg, $md} {
+        padding: 25px;
+      }
+    }
   }
   &-border {
     border-bottom: 1px solid #ffffff15;

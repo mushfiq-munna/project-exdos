@@ -10,6 +10,11 @@
   @media #{$xs} {
     padding-left: 30px;
   }
+  &-black {
+    @media #{$xxlm} {
+      padding-left: 10px;
+    }
+  }
 
   &-space {
     @media #{$xs,$sm} {
@@ -84,10 +89,49 @@
     &-black {
       color: #0a0e1a;
       font-size: 100px;
+      @media #{$xl} {
+        font-size: 80px;
+      }
+      @media #{$lg} {
+        font-size: 67px;
+      }
+      @media #{$md} {
+        font-size: 55px;
+      }
+      @media #{$sm} {
+        font-size: 35px;
+      }
+      @media #{$xs} {
+        font-size: 32px;
+      }
       & img {
         margin-left: 48px;
         margin-right: 48px;
         transform: translateY(-15px);
+
+        @media #{$lg} {
+          margin-left: 20px;
+          margin-right: 25px;
+          transform: translateY(-5px);
+        }
+        @media #{$md} {
+          width: 15%;
+          margin-left: 10px;
+          margin-right: 15px;
+          transform: translateY(-5px);
+        }
+        @media #{$sm} {
+          width: 13%;
+          margin-left: 10px;
+          margin-right: 15px;
+          transform: translateY(-5px);
+        }
+        @media #{$xs} {
+          width: 10%;
+          margin-left: 3px;
+          margin-right: 6px;
+          transform: translateY(-2px);
+        }
       }
     }
   }
@@ -227,13 +271,54 @@
     &-content {
       max-width: 488px;
       margin-left: 155px;
+      @media #{$lg} {
+        margin-left: 75px;
+        margin-right: 20px;
+      }
+      @media #{$md} {
+        margin-left: 0;
+      }
+      @media #{$sm,$xs} {
+        margin-left: 0;
+        margin-left: 0;
+        max-width: 100%;
+      }
+
+      & p {
+        @media #{$xs} {
+          font-size: 15px;
+        }
+      }
     }
   }
 
   &-img {
     flex: 0 0 auto;
+    @media screen and (min-width: 1601px) and (max-width: 1800px) {
+      width: 350px;
+    }
+    @media #{$xxlm} {
+      width: 280px;
+      margin-right: 10px;
+    }
+    @media #{$xl} {
+      width: 200px;
+      margin-right: 10px;
+    }
+    @media #{$lg, $md} {
+      width: 130px;
+      margin-right: 10px;
+    }
+
     & img {
       max-width: inherit;
+      @media screen and (min-width: 1601px) and (max-width: 1800px) {
+        max-width: 100%;
+      }
+
+      @media #{$xxlm, $xl, $lg, $md} {
+        max-width: 100%;
+      }
     }
   }
 
@@ -243,11 +328,46 @@
       border-radius: 100%;
       bottom: 55px;
       z-index: 2;
+      @media #{$xxlm} {
+        width: 300px;
+      }
+      @media #{$xl} {
+        width: 250px;
+      }
+      @media #{$lg} {
+        width: 200px;
+        bottom: 125px;
+      }
+      @media #{$md} {
+        width: 140px;
+        bottom: 125px;
+        right: 5%;
+      }
+
+      @media #{$sm} {
+        width: 100px;
+      }
     }
     &-shape-1 {
       right: 60px;
       top: 137px;
       z-index: 1;
+      @media #{$xxlm, $xl} {
+        top: 200px;
+        width: 200px;
+      }
+      @media #{$lg} {
+        width: 155px;
+        top: 200px;
+      }
+      @media #{$md} {
+        width: 150px;
+        top: 210px;
+        right: 3%;
+      }
+      @media #{$sm} {
+        width: 100px;
+      }
     }
   }
 }
