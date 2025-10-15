@@ -120,6 +120,12 @@
 
 .tp-section-m-100 {
   margin: 0 100px;
+  @media #{$xxlm} {
+    margin: 0 50px;
+  }
+  @media #{$xl, $lg, $md, $sm, $xs} {
+    margin: 0;
+  }
 }
 
 .tp-slide-transition {

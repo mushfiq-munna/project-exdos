@@ -78,7 +78,16 @@
   }
 
   &-thumb {
-    max-width: inherit;
+    @media #{$md,$sm,$xs} {
+      margin-left: 0;
+    }
+
+    & img {
+      max-width: inherit;
+      @media #{$md,$sm,$xs} {
+        max-width: 100%;
+      }
+    }
   }
 }
 

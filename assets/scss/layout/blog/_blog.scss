@@ -72,6 +72,9 @@
     @media #{$lg} {
       font-size: 26px;
     }
+    @media #{$md} {
+      font-size: 23px;
+    }
     @media #{$xs} {
       font-size: 25px;
     }

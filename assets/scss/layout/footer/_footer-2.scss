@@ -110,9 +110,15 @@
 .footer-4-col {
   &-2 {
     padding-left: 50px;
+    @media #{$lg, $md, $sm, $xs} {
+      padding-left: 0;
+    }
   }
   &-3 {
     padding-left: 60px;
+    @media #{$lg, $md, $sm, $xs} {
+      padding-left: 0;
+    }
   }
 }
 

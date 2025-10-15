@@ -211,7 +211,7 @@
     },
   });
 
-  // team slider
+  // project slider
   var swiper = new Swiper(".tp-project-active", {
     slidesPerView: 4,
     spaceBetween: 30,

@@ -1,6 +1,11 @@
 @use "../../utils" as *;
 
 .tp-newsletter {
+  &-area {
+    @media #{$sm,$xs} {
+      border-radius: 50px;
+    }
+  }
   &-margin {
     margin-top: -110px;
   }

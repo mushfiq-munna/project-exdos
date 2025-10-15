@@ -233,6 +233,13 @@
     padding: 20px;
   }
 
+  &__content {
+    @media #{$md,$xs,$sm} {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   &__thumb {
   }
 
@@ -258,6 +265,9 @@
 
 .tp-project-active-margin {
   margin: 0 -100px;
+  @media #{$md,$sm, $xs} {
+    margin: 0;
+  }
 }
 
 .showcase-row-item {

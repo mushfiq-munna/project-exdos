@@ -150,6 +150,14 @@
         padding: 25px;
       }
     }
+    &-4 {
+      @media #{$lg, $md} {
+        padding: 25px;
+      }
+      @media #{$sm} {
+        padding: 20px;
+      }
+    }
   }
   &-border {
     border-bottom: 1px solid #ffffff15;
