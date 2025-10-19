@@ -81,6 +81,9 @@
 
     &-2 {
       font-weight: 400;
+      @media #{$sm, $xs} {
+        font-size: 20px;
+      }
     }
   }
   &-2 {

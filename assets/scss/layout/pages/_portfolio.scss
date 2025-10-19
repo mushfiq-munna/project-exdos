@@ -149,6 +149,12 @@
     @media #{$md, $sm, $xs} {
       margin-bottom: 30px;
     }
+
+    &-5 {
+      @media #{$md, $sm, $xs} {
+        margin-bottom: 0;
+      }
+    }
   }
   &__number {
     & span {
@@ -218,12 +224,19 @@
   &__logo {
     min-height: 320px;
     padding: 30px;
+    @media #{$md, $sm, $xs} {
+      margin-bottom: -1px;
+    }
   }
 
   &__content-box {
     padding: 30px;
     margin-left: -1px;
     margin-bottom: -1px;
+
+    @media #{$md, $sm, $xs} {
+      margin-top: -1px;
+    }
   }
 }
 

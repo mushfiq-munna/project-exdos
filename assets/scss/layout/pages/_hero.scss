@@ -14,6 +14,14 @@
     @media #{$xxlm} {
       padding-left: 10px;
     }
+    &-5 {
+      @media #{$xxlm} {
+        padding-left: 95px;
+      }
+      @media #{$sm, $xs} {
+        padding-left: 15px;
+      }
+    }
   }
 
   &-wrapper-4 {
@@ -47,6 +55,12 @@
       @media #{$xs} {
         padding-bottom: 0;
         padding-top: 150px;
+      }
+    }
+    &-5 {
+      @media #{$xs} {
+        padding-bottom: 115px;
+        padding-top: 130px;
       }
     }
   }
@@ -216,6 +230,12 @@
     &-1 {
       top: 270px;
       left: 60px;
+      @media #{$xl} {
+        top: 150px;
+      }
+      @media #{$lg} {
+        top: 140px;
+      }
     }
     &-2 {
       top: 177px;
@@ -416,6 +436,9 @@
 
 .ml-m-5 {
   margin-left: -6px;
+  @media #{$lg} {
+    margin-left: 5px;
+  }
 }
 
 .hero-circle-shape {
@@ -464,25 +487,46 @@
   &-5 {
     & img {
       width: 98%;
+
+      @media #{$xxlm} {
+        width: 80%;
+      }
+      @media #{$xl} {
+        width: 65%;
+      }
+      @media #{$lg} {
+        width: 65%;
+      }
+      @media #{$md, $sm, $xs} {
+        width: 50%;
+      }
     }
   }
 }
 
-.tp-hero-social-4 {
-  position: absolute;
-  display: flex;
-  transform: rotate(-90deg);
-  text-transform: uppercase;
-  font-size: 17px;
-  color: #0a0e1a;
-  top: 50%;
-  left: 0;
-  font-weight: 500;
+.tp-hero-social {
+  &-4 {
+    position: absolute;
+    display: flex;
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #0a0e1a;
+    top: 50%;
+    left: 0;
+    font-weight: 500;
 
-  @media #{$xxlm} {
-    left: -65px;
+    @media #{$xxlm} {
+      left: -65px;
+    }
+    & span {
+      margin: 0 5px;
+    }
   }
-  & span {
-    margin: 0 5px;
+
+  &-5 {
+    @media #{$xxlm} {
+      left: -40px;
+    }
   }
 }

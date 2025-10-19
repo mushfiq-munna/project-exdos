@@ -46,6 +46,12 @@
       }
     }
 
+    &-5 {
+      @media #{$xl} {
+        font-size: 50px;
+      }
+    }
+
     // & br {
     //   display: none;
     // }
@@ -70,11 +76,32 @@
         color: #fff;
       }
     }
+
+    & br {
+      @media #{$xs,$sm} {
+        display: none;
+      }
+    }
   }
 }
 
 .title {
   &-40 {
     font-size: 40px;
+    @media #{$xl} {
+      font-size: 35px;
+    }
+    @media #{$lg} {
+      font-size: 30px;
+    }
+    @media #{$md} {
+      font-size: 25px;
+    }
+    @media #{$sm, $xs} {
+      font-size: 21px;
+    }
+    @media #{$xs} {
+      font-size: 17px;
+    }
   }
 }

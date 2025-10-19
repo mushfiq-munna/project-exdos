@@ -50,10 +50,26 @@
     padding: 0 30px;
     display: inline-block;
     transform: translateY(18px);
+
+    @media #{$xs} {
+      font-size: 23px;
+      padding: 0 20px;
+    }
   }
 }
 
 .tp-brand-normal-wrapper {
   border: 1px solid #57595c;
   padding: 80px 75px;
+  @media #{$xs} {
+    padding: 50px 45px;
+  }
+}
+
+.tp-brand-img {
+  & img {
+    @media #{$sm, $xs} {
+      width: 100%;
+    }
+  }
 }

@@ -151,7 +151,7 @@
 
     breakpoints: {
       0: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
       768: {
         slidesPerView: 2,
@@ -160,7 +160,7 @@
         slidesPerView: 3,
       },
       1200: {
-        slidesPerView: 5,
+        slidesPerView: 4,
       },
     },
   });

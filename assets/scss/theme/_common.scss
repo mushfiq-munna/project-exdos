@@ -80,9 +80,21 @@
 .tp-fs {
   &-30 {
     font-size: 30px;
+    @media #{$sm, $xs} {
+      font-size: 23px;
+    }
   }
   &-40 {
     font-size: 40px;
+    @media #{$xl} {
+      font-size: 31px;
+    }
+    @media #{$lg, $sm} {
+      font-size: 25px;
+    }
+    @media #{$xs} {
+      font-size: 19px;
+    }
   }
   &-50 {
     font-size: 50px;

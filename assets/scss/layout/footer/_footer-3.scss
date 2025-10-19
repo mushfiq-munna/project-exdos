@@ -10,5 +10,18 @@
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 20px;
     text-align: center;
+
+    @media #{$lg} {
+      font-size: 21px;
+    }
+  }
+}
+
+.footer-5-col-1 {
+  padding-left: 0;
+}
+.footer-5-col-4 {
+  @media #{$sm, $xs} {
+    padding-left: 0;
   }
 }

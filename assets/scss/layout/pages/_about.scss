@@ -61,6 +61,13 @@
       top: 0;
       width: 50%;
       background-color: #fff;
+
+      @media #{$lg, $md, $sm, $xs} {
+        position: static;
+        width: 100%;
+        margin-top: 60px;
+        padding-top: 30px;
+      }
     }
   }
 
@@ -172,9 +179,27 @@
   }
 }
 
-.tp-founder-sep {
-  height: 40px;
-  width: 1px;
-  background: #f83838;
-  margin: 25px auto;
+.tp-founder {
+  &-area {
+    @media #{$sm, $xs} {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  &-sep {
+    height: 40px;
+    width: 1px;
+    background: #f83838;
+    margin: 25px auto;
+    @media #{$sm, $xs} {
+      margin: 20px auto;
+    }
+  }
+}
+
+.tp-about-fact-right-area {
+  @media #{$lg, $md, $sm, $xs} {
+    padding-bottom: 0;
+  }
 }

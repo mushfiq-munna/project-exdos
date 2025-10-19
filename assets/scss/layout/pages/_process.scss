@@ -1,5 +1,11 @@
 @use "../../utils" as *;
 
+.tp-process-area {
+  @media #{$sm, $xs} {
+    padding-bottom: 0;
+  }
+}
+
 .tpprocess {
   padding: 60px 35px;
   & p {
@@ -10,6 +16,9 @@
 
   &-padding {
     padding: 0;
+    @media #{$lg, $md, $sm, $xs} {
+      padding: 10px;
+    }
   }
 
   &__border {

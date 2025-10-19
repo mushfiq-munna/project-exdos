@@ -123,6 +123,12 @@
 }
 
 .tp-service-tab {
+  &-wrapper {
+    @media #{$sm, $xs} {
+      padding-left: 15px;
+    }
+  }
+
   & .nav-links:first-child {
     border-top: 1px solid #57595c;
   }
@@ -145,12 +151,27 @@
 
   &__title {
     font-size: 100px;
+
+    &-5 {
+      @media #{$xxlm} {
+        font-size: 70px;
+      }
+      @media #{$xl} {
+        font-size: 55px;
+      }
+      @media #{$lg, $md, $sm, $xs} {
+        font-size: 40px;
+      }
+    }
   }
 
   &__content {
     & p {
       color: #b1b4ba;
       margin: 0;
+      @media #{$xs} {
+        font-size: 15px;
+      }
     }
   }
 }
