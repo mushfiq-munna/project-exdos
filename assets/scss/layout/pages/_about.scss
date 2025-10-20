@@ -203,3 +203,11 @@
     padding-bottom: 0;
   }
 }
+
+.tp-about-feature-icon {
+  & span {
+    & i {
+      font-size: 79px;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@use "../utils" as *;
+
+.tp-exp {
+  &-wrapper {
+    position: absolute;
+    top: -50px;
+    right: 50px;
+  }
+
+  &-content {
+    background: var(--tp-theme-color-2);
+    padding: 25px 22px;
+    border-radius: 10px;
+    z-index: 2;
+    & h2 {
+      font-size: 100px;
+      margin-right: 20px;
+    }
+  }
+
+  &-bg {
+    position: absolute;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    bottom: -10px;
+    right: 10px;
+    z-index: 1;
+  }
+}
+
+.tp-progress-item {
+  line-height: 1;
+  & label {
+    font-size: 15px;
+    color: #0a0e1a;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+}
+
+.progress,
+.progress-stacked {
+  height: 14px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.progress-outer {
+  border: 1px solid #57595c;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.progress-num {
+  position: absolute;
+  left: calc(100% - 27%);
+  top: -40px;
+  background: var(--tp-theme-color);
+  color: #fff;
+  padding: 7px 5px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 6px;
+
+  &::after {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 10px 10px 0;
+    border-color: transparent #0057fc transparent transparent;
+    transform: rotate(0deg);
+    content: "";
+    top: 97%;
+    right: 15px;
+  }
+}

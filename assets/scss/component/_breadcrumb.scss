@@ -1,0 +1,45 @@
+@use "../utils" as *;
+
+.tp-breadcrumb {
+  &-space {
+    padding-top: 235px;
+    padding-bottom: 140px;
+  }
+
+  &-title {
+    font-size: 70px;
+  }
+  &-list {
+    & span {
+      margin: 0 2px;
+      display: inline-block;
+      & a {
+        font-size: 20px;
+        color: #b1b4ba;
+      }
+      &.active {
+        & a {
+          color: var(--tp-theme-color-2);
+        }
+      }
+      &.divr {
+        margin: 0 2px;
+        font-weight: 700;
+        font-size: 20px;
+      }
+    }
+  }
+
+  &-shape-1 {
+    left: 145px;
+    top: 185px;
+  }
+  &-shape-2 {
+    right: 32%;
+    top: 146px;
+  }
+  &-shape-3 {
+    right: 160px;
+    top: 230px;
+  }
+}

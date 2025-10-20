@@ -32,27 +32,36 @@
     padding: 20px 0 10px 0;
   }
 }
-.tpfaq-bg {
-  height: 100%;
-  position: absolute;
-  left: 0;
-  width: calc(50% - 65px);
-  background-size: cover;
-  border-radius: 0 30px 30px 0;
+.tpfaq {
+  &-bg {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(50% - 65px);
+    background-size: cover;
+    border-radius: 0 30px 30px 0;
 
-  @media #{$md, $sm, $xs} {
-    position: static;
-    width: 100%;
+    @media #{$md, $sm, $xs} {
+      position: static;
+      width: 100%;
+      border-radius: 0;
+      height: 500px;
+      margin-bottom: 30px;
+    }
+    @media #{$sm} {
+      height: 400px;
+    }
+    @media #{$xs} {
+      height: 300px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &-about-bg {
+    left: inherit;
+    right: 0;
     border-radius: 0;
-    height: 500px;
-    margin-bottom: 30px;
-  }
-  @media #{$sm} {
-    height: 400px;
-  }
-  @media #{$xs} {
-    height: 300px;
-    margin-bottom: 20px;
   }
 }
 
