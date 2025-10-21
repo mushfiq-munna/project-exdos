@@ -68,6 +68,32 @@
     // other options
   });
 
+  // isotop
+  if ($(".grid").length != 0) {
+    var $grid = $(".grid").imagesLoaded(function () {
+      $(".grid").isotope({
+        itemSelector: ".grid-item",
+        percentPosition: true,
+        masonry: {
+          columnWidth: 1,
+        },
+      });
+
+      // filter items on button click
+      $(".tp-portfolio-filter").on("click", "button", function () {
+        var filterValue = $(this).attr("data-filter");
+        $grid.isotope({ filter: filterValue });
+      });
+
+      // for menu active class
+      $(".tp-portfolio-filter button").on("click", function (event) {
+        $(this).siblings(".active").removeClass("active");
+        $(this).addClass("active");
+        event.preventDefault();
+      });
+    });
+  }
+
   // testimonial slider
   var swiper = new Swiper(".tp-testimonial-active", {
     slidesPerView: 1,

@@ -10,6 +10,7 @@
   display: inline-block;
   position: relative;
   overflow: hidden;
+  transition: 0.3s;
   &-200 {
     padding: 16px 35px;
   }
@@ -177,6 +178,13 @@
     font-family: var(--tp-font-heading);
     border-radius: 5px;
     display: inline-block;
+  }
+
+  &-price {
+    &:hover {
+      color: #0a0e1a;
+      background: #e5cf00;
+    }
   }
 }
 
