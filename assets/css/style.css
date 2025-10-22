@@ -5624,9 +5624,6 @@ textarea {
 .tp-section-title-white {
   color: #fff;
 }
-.tp-section-title-wrapper p br {
-  display: none;
-}
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .tp-section-title-wrapper {
     padding-right: 0;
@@ -7958,6 +7955,41 @@ textarea {
 .tp-contact-form-box textarea {
   height: 160px;
   padding: 20px 25px;
+}
+
+.tp-contact-info {
+  padding: 42px 41px;
+  border: 1px solid #57595c;
+  border-radius: 15px;
+  text-align: center;
+}
+.tp-contact-info-icon {
+  margin-bottom: 30px;
+}
+.tp-contact-info-icon span {
+  line-height: 1;
+  font-size: 85px;
+}
+.tp-contact-info-text span {
+  font-size: 15px;
+  color: #57595c;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: inline-block;
+  line-height: 1;
+}
+.tp-contact-info-text p {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: var(--tp-font-heading);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.tp-map-area iframe {
+  height: 700px;
+  width: 100%;
 }
 
 .tp-cta-overlay::before {
