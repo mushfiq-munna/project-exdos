@@ -6004,6 +6004,120 @@ textarea {
 .tp-postbox-title {
   font-weight: 400;
 }
+.tp-postbox-details blockquote {
+  text-align: center;
+  border: 1px solid #57595c;
+  border-radius: 20px;
+  padding: 60px;
+}
+.tp-postbox-details blockquote p {
+  font-size: 30px;
+  font-family: var(--tp-font-heading);
+  color: #000;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+.tp-postbox-details blockquote i {
+  font-size: 70px;
+  margin-bottom: 30px;
+}
+.tp-postbox-details blockquote cite {
+  font-size: 20px;
+  color: #0a0a0a;
+  font-style: normal;
+}
+.tp-postbox-details-title {
+  font-weight: 400;
+}
+.tp-postbox-tag span {
+  color: var(--tp-heading-color);
+  margin-right: 20px;
+}
+.tp-postbox-tag-wrapper {
+  padding: 40px;
+  border: 1px solid #57595c;
+  border-radius: 10px;
+}
+.tp-postbox-tag a {
+  color: var(--tp-heading-color);
+  background: #fbf6ef;
+  padding: 15px 21px;
+  line-height: 1;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+.tp-postbox-tag a:hover {
+  background: var(--tp-theme-color);
+  color: #fff;
+  border-color: var(--tp-theme-color);
+}
+.tp-postbox-social a {
+  border: 1px solid #57595c;
+  color: #57595c;
+  border-radius: 10px;
+  height: 42px;
+  width: 42px;
+  font-size: 14px;
+  line-height: 42px;
+  margin-right: 5px;
+  display: inline-block;
+  text-align: center;
+  transition: 0.3s;
+}
+.tp-postbox-social a:hover {
+  background: var(--tp-theme-color);
+  color: #fff;
+  border-color: var(--tp-theme-color);
+}
+.tp-postbox-comments ul {
+  list-style: none;
+}
+.tp-postbox-comments ul li {
+  margin-bottom: 60px;
+}
+.tp-postbox-comments ul li.children {
+  padding-left: 100px;
+}
+.tp-postbox-comments-thumb {
+  float: left;
+}
+.tp-postbox-comments-thumb img {
+  border-radius: 5px;
+  height: 120px;
+  width: 120px;
+  margin-right: 30px;
+}
+.tp-postbox-comments-text {
+  position: relative;
+  overflow: hidden;
+}
+.tp-postbox-comments-text span {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.tp-postbox-comments-author {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #0a0e1a;
+}
+
+.reply {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  font-size: 19px;
+}
+.reply i {
+  font-size: 20px;
+  margin-right: 5px;
+}
 
 .tp-swiper-blog-button {
   height: 75px;
