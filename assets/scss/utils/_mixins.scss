@@ -1,5 +1,5 @@
 @mixin tp-placeholder {
-  &::-webkit-inout-placeholder {
+  &::-webkit-input-placeholder {
     @content;
   }
   &:-moz-placeholder {

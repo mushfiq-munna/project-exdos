@@ -94,6 +94,23 @@
     });
   }
 
+  // blog slider
+  var swiper = new Swiper(".tp-blog-active", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    keyboard: {
+      enabled: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".tp-swiper-blog-button-next",
+      prevEl: ".tp-swiper-blog-button-prev",
+    },
+  });
+
   // testimonial slider
   var swiper = new Swiper(".tp-testimonial-active", {
     slidesPerView: 1,
