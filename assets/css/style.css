@@ -8931,6 +8931,55 @@ textarea {
   margin: 0 10px;
 }
 
+.tp-team-details-more ul {
+  list-style: none;
+}
+.tp-team-details-more ul li {
+  margin-bottom: 10px;
+}
+.tp-team-details-more ul li label {
+  color: #57595c;
+  width: 140px;
+}
+.tp-team-details-more ul li span {
+  color: #0a0e1a;
+}
+.tp-team-details-exp ul {
+  margin-left: 20px;
+}
+.tp-team-details-exp ul li {
+  color: #0a0e1a;
+  margin-bottom: 10px;
+}
+.tp-team-details-thumb-email a {
+  font-size: 13px;
+  color: #0a0e1a;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  padding: 7px 20px;
+}
+.tp-team-details-thumb-email a i {
+  color: var(--tp-theme-color);
+  font-size: 14px;
+  border-left: 1px solid #0a0e1a;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.tp-team-details-skill-box .progress-outer {
+  border: 0;
+  padding: 0;
+}
+.tp-team-details-skill-box .progress,
+.tp-team-details-skill-box .progress-stacked {
+  height: 10px;
+  background-color: #ddd;
+}
+
 .tpaward-wrapper .row .col-md-6:nth-child(even) .tpaward {
   padding-left: 50px;
   border-left: 1px solid #57595c;

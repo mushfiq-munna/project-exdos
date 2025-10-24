@@ -166,3 +166,66 @@
     margin: 0 10px;
   }
 }
+
+.tp-team-details {
+  &-more {
+    & ul {
+      list-style: none;
+      & li {
+        margin-bottom: 10px;
+        & label {
+          color: #57595c;
+          width: 140px;
+        }
+
+        & span {
+          color: #0a0e1a;
+        }
+      }
+    }
+  }
+  &-exp {
+    & ul {
+      margin-left: 20px;
+      & li {
+        color: #0a0e1a;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &-thumb {
+    &-email {
+      & a {
+        font-size: 13px;
+        color: #0a0e1a;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: inline-flex;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        border-top: 1px solid #ddd;
+        padding: 7px 20px;
+        & i {
+          color: var(--tp-theme-color);
+          font-size: 14px;
+          border-left: 1px solid #0a0e1a;
+          margin-left: 20px;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.tp-team-details-skill-box {
+  & .progress-outer {
+    border: 0;
+    padding: 0;
+  }
+  & .progress,
+  .progress-stacked {
+    height: 10px;
+    background-color: #ddd;
+  }
+}
