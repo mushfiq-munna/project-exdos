@@ -4,8 +4,12 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  @media #{$xs} {
-    justify-content: center;
+}
+
+.tp-fact-area {
+  @media #{$lg, $md} {
+    padding-bottom: 90px;
+    padding-top: 90px;
   }
 }
 
@@ -15,7 +19,8 @@
       font-size: 110px;
       display: inline-flex;
       color: var(--tp-theme-color-2);
-      @media #{$md, $sm, $xs} {
+
+      @media #{$lg, $md, $sm, $xs} {
         font-size: 90px;
       }
       @media #{$sm, $xs} {
@@ -40,7 +45,7 @@
         font-size: 50px;
       }
       @media #{$lg} {
-        font-size: 80px;
+        font-size: 70px;
       }
       @media #{$md} {
         font-size: 60px;
@@ -54,16 +59,23 @@
     font-size: 30px;
     color: #fff;
     opacity: 0.5;
-    // margin-top: 30px;
+    @media #{$xl, $lg} {
+      font-size: 25px;
+    }
+    @media #{$md, $sm, $xs} {
+      font-size: 22px;
+    }
 
-    @media #{$xl} {
-      font-size: 15px;
-    }
-    @media #{$md} {
-      font-size: 20px;
-    }
-    @media #{ $sm, $xs} {
-      font-size: 13px;
+    &-5 {
+      @media #{$xl} {
+        font-size: 15px;
+      }
+      @media #{$md} {
+        font-size: 20px;
+      }
+      @media #{ $sm, $xs} {
+        font-size: 13px;
+      }
     }
   }
 
@@ -125,7 +137,7 @@
   }
 }
 
-.tp-fact-th {
-  right: 0;
-  top: 0;
-}
+// .tp-fact-th {
+//   right: 0;
+//   top: 0;
+// }

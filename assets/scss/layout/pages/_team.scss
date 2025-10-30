@@ -168,6 +168,11 @@
 }
 
 .tp-team-details {
+  &-content {
+    @media #{$md, $sm, $xs} {
+      padding-left: 0;
+    }
+  }
   &-more {
     & ul {
       list-style: none;
@@ -213,6 +218,10 @@
           margin-left: 20px;
           padding-left: 20px;
         }
+      }
+
+      @media #{$xs} {
+        margin-bottom: 30px;
       }
     }
   }

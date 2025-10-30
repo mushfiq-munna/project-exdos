@@ -25,6 +25,12 @@
   &-title {
     font-size: 60px;
 
+    & br {
+      @media #{$md} {
+        display: none;
+      }
+    }
+
     &.tp-fs-40 {
       font-size: 40px;
     }
@@ -56,18 +62,17 @@
       }
     }
 
-    // & br {
-    //   display: none;
-    // }
     &-white {
       color: #fff;
     }
     &-wrapper {
-      // & p {
-      //   & br {
-      //     display: none;
-      //   }
-      // }
+      & p {
+        & br {
+          @media #{$sm, $xs} {
+            display: none;
+          }
+        }
+      }
 
       @media #{ $sm, $xs} {
         padding-right: 0;

@@ -12,9 +12,29 @@
     padding: 25px 22px;
     border-radius: 10px;
     z-index: 2;
+    @media #{$lg, $md} {
+      padding: 20px 15px;
+    }
+    @media #{$sm, $xs} {
+      padding: 15px 10px;
+    }
     & h2 {
       font-size: 100px;
       margin-right: 20px;
+      @media #{$lg, $md} {
+        font-size: 70px;
+      }
+      @media #{ $sm, $xs} {
+        font-size: 50px;
+      }
+    }
+    & h5 {
+      @media #{$lg, $md} {
+        font-size: 25px;
+      }
+      @media #{ $sm, $xs} {
+        font-size: 20px;
+      }
     }
   }
 
@@ -75,5 +95,17 @@
     content: "";
     top: 97%;
     right: 15px;
+  }
+}
+
+.tp-progress-box {
+  @media #{$lg, $md, $sm, $xs} {
+    padding-left: 0;
+  }
+}
+
+.tp-skill-title {
+  @media #{$md, $sm, $xs} {
+    font-size: 35px;
   }
 }

@@ -229,6 +229,26 @@
   position: absolute;
   bottom: 36px;
   left: 79px;
+  @media #{$xl} {
+    left: 45px;
+  }
+  @media #{$lg} {
+    bottom: 15px;
+    left: 50px;
+  }
+  @media #{$md} {
+    bottom: 150px;
+    left: 210px;
+  }
+  @media #{$xs} {
+    left: 71px;
+  }
+  & .tp-btn-sec {
+    @media #{$lg, $xs} {
+      padding: 8px 20px;
+      font-size: 13px;
+    }
+  }
 }
 
 .tp-service-details-list {
@@ -243,10 +263,14 @@
       background: var(--tp-theme-color);
       border-radius: 100%;
       padding: 12px 13px;
+      flex: 0 0 auto;
     }
   }
 
   &-title {
     font-size: 30px;
+    @media #{$lg} {
+      font-size: 25px;
+    }
   }
 }

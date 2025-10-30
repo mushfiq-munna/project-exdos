@@ -390,6 +390,9 @@
       font-size: 60px;
       font-weight: 400;
       color: #0a0e1a;
+      @media #{$xs} {
+        font-size: 50px;
+      }
     }
   }
 
@@ -443,12 +446,22 @@
     & li {
       list-style: none;
       margin-bottom: 15px;
+      position: relative;
       &::before {
         content: "\f061";
         font-family: "Font Awesome 5 Pro";
         transform: rotate(-40deg);
         display: inline-block;
         margin-right: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      & span {
+        margin-left: 23px;
+        display: inline-block;
+        overflow: hidden;
       }
     }
   }

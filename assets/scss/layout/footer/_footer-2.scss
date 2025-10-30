@@ -138,3 +138,9 @@
     }
   }
 }
+
+.tp-footer-logo-area {
+  @media #{$sm, $xs} {
+    padding-top: 60px;
+  }
+}

@@ -87,6 +87,12 @@
       font-family: var(--tp-font-heading);
       line-height: 1.2;
       margin: 0;
+      @media #{$xl} {
+        font-size: 25px;
+      }
+      @media #{$xs} {
+        font-size: 20px;
+      }
     }
   }
 }
@@ -95,5 +101,17 @@
   & iframe {
     height: 700px;
     width: 100%;
+    @media #{$xl} {
+      height: 600px;
+    }
+    @media #{$lg} {
+      height: 500px;
+    }
+    @media #{$md, $sm, $xs} {
+      height: 400px;
+    }
+    @media #{$sm, $xs} {
+      height: 300px;
+    }
   }
 }

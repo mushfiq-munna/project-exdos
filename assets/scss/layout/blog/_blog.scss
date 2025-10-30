@@ -4,7 +4,7 @@
   &__thumb {
   }
   &__content {
-    @media #{$lg,$md} {
+    @media #{$lg,$md, $sm, $xs} {
       padding-left: 3px;
     }
 
@@ -143,6 +143,18 @@
 
   &-title {
     font-weight: 400;
+    @media #{$xl} {
+      font-size: 40px;
+    }
+    @media #{$lg} {
+      font-size: 35px;
+    }
+    @media #{$md} {
+      font-size: 35px;
+    }
+    @media #{$xs,$sm} {
+      font-size: 27px;
+    }
   }
 
   &-details {
@@ -151,6 +163,12 @@
       border: 1px solid #57595c;
       border-radius: 20px;
       padding: 60px;
+      @media #{$lg} {
+        padding: 50px;
+      }
+      @media #{$md, $sm, $xs} {
+        padding: 29px;
+      }
 
       & p {
         font-size: 30px;
@@ -178,6 +196,9 @@
   }
 
   &-tag {
+    @media #{$md, $sm, $xs} {
+      margin-bottom: 20px;
+    }
     & span {
       color: var(--tp-heading-color);
       margin-right: 20px;
@@ -186,6 +207,9 @@
       padding: 40px;
       border: 1px solid #57595c;
       border-radius: 10px;
+      @media #{$sm, $xs} {
+        padding: 30px;
+      }
     }
 
     & a {
@@ -198,6 +222,11 @@
       font-weight: 500;
       margin-right: 10px;
       transition: 0.3s;
+      margin-bottom: 10px;
+      display: inline-block;
+      @media #{ $sm, $xs} {
+        padding: 10px 11px;
+      }
       &:hover {
         background: var(--tp-theme-color);
         color: #fff;
@@ -234,6 +263,9 @@
         margin-bottom: 60px;
         &.children {
           padding-left: 100px;
+          @media #{$xs} {
+            padding-left: 20px;
+          }
         }
       }
     }
@@ -273,6 +305,9 @@
   top: 20px;
   right: 0;
   font-size: 19px;
+  @media #{$sm, $xs} {
+    position: static;
+  }
   & i {
     font-size: 20px;
     margin-right: 5px;
@@ -409,6 +444,16 @@
       transform: translateY(-3px);
     }
   }
+
+  // &-post {
+  //   &-thumb {
+  //     & a {
+  //       & img {
+  //         width: 100%;
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 .tp-blog-form {
@@ -451,6 +496,9 @@
     margin-bottom: 9px;
     line-height: 1;
     transition: 0.3s;
+    @media #{$lg, $md, $sm, $xs} {
+      padding: 13px 13px;
+    }
     &:hover {
       background: var(--tp-theme-color);
       color: #fff;

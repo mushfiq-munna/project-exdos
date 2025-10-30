@@ -8,6 +8,9 @@
 
   &-title {
     font-size: 70px;
+    @media #{$sm, $xs} {
+      font-size: 50px;
+    }
   }
   &-list {
     & span {
@@ -31,15 +34,24 @@
   }
 
   &-shape-1 {
-    left: 145px;
+    left: 10%;
     top: 185px;
+    @media #{$sm, $xs} {
+      width: 100px;
+    }
   }
   &-shape-2 {
     right: 32%;
     top: 146px;
+    @media #{$sm, $xs} {
+      width: 70px;
+    }
   }
   &-shape-3 {
-    right: 160px;
+    right: 15%;
     top: 230px;
+    @media #{$sm, $xs} {
+      width: 110px;
+    }
   }
 }

@@ -29,7 +29,18 @@
     }
   });
 
-  // class add
+  // sticky header js
+  var windowOn = $(window);
+  windowOn.on("scroll", function () {
+    var scroll = windowOn.scrollTop();
+    if (scroll < 100) {
+      $("#tp-header-sticky").removeClass("header-sticky");
+    } else {
+      $("#tp-header-sticky").addClass("header-sticky");
+    }
+  });
+
+  // Offcanvas
   $(".tp-offcanvas-toggle").on("click", function () {
     $(".tp-offcanvas").addClass("tp-offcanvas-open");
     $(".tp-offcanvas-overlay").addClass("tp-offcanvas-overlay-open");
@@ -37,6 +48,17 @@
 
   $(".tp-offcanvas-close, .tp-offcanvas-overlay").on("click", function () {
     $(".tp-offcanvas").removeClass("tp-offcanvas-open");
+    $(".tp-offcanvas-overlay").removeClass("tp-offcanvas-overlay-open");
+  });
+
+  // SearchBar
+  $(".tp-header-search").on("click", function () {
+    $(".tp-header-search-area").addClass("tp-search-open");
+    $(".tp-offcanvas-overlay").addClass("tp-offcanvas-overlay-open");
+  });
+
+  $(".tp-search-close, .tp-offcanvas-overlay").on("click", function () {
+    $(".tp-header-search-area").removeClass("tp-search-open");
     $(".tp-offcanvas-overlay").removeClass("tp-offcanvas-overlay-open");
   });
 
