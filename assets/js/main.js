@@ -1,6 +1,11 @@
 (function ($) {
   "use strict";
 
+  $(window).on("load", function () {
+    preloader();
+    wowAnimation();
+  });
+
   // mobile menu
   var tpMenuWrap = $(".tp-mobile-menu-active > ul").clone();
   var tpSideMenu = $(".tp-offcanvas-menu nav");
@@ -52,7 +57,7 @@
   });
 
   // SearchBar
-  $(".tp-header-search").on("click", function () {
+  $(".tp-search-toogle").on("click", function () {
     $(".tp-header-search-area").addClass("tp-search-open");
     $(".tp-offcanvas-overlay").addClass("tp-offcanvas-overlay-open");
   });
@@ -307,4 +312,16 @@
       },
     },
   });
+
+  // WOW JS
+  function wowAnimation() {
+    var wow = new WOW({
+      boxClass: "wow",
+      animateClass: "animated",
+      offset: 0,
+      mobile: false,
+      live: true,
+    });
+    wow.init();
+  }
 })(jQuery);

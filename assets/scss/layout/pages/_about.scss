@@ -112,7 +112,7 @@
     }
     & img {
       position: relative;
-      z-index: 99;
+      z-index: 60;
       @media #{$xl, $lg, $sm, $xs} {
         width: 95%;
       }

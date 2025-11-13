@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="./assets/css/flaticon-exdos.css" />
     <link rel="stylesheet" href="assets/css/magnific-popup.css" />
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <!-- ------header start------ -->
+    <!-- header start -->
     <header>
       <div
         id="tp-header-sticky"
@@ -60,7 +61,7 @@
                                       src="./assets/img/demo/home-2.jpeg"
                                       alt=""
                                     />
-                                    <h3 class="tp-home-title">Home-01</h3>
+                                    <h3 class="tp-home-title">Home-02</h3>
                                   </div>
                                 </a>
                               </div>
@@ -71,7 +72,7 @@
                                       src="./assets/img/demo/home-3.jpeg"
                                       alt=""
                                     />
-                                    <h3 class="tp-home-title">Home-01</h3>
+                                    <h3 class="tp-home-title">Home-03</h3>
                                   </div>
                                 </a>
                               </div>
@@ -82,7 +83,7 @@
                                       src="./assets/img/demo/home-4.jpeg"
                                       alt=""
                                     />
-                                    <h3 class="tp-home-title">Home-01</h3>
+                                    <h3 class="tp-home-title">Home-04</h3>
                                   </div>
                                 </a>
                               </div>
@@ -93,7 +94,7 @@
                                       src="./assets/img/demo/home-5.jpeg"
                                       alt=""
                                     />
-                                    <h3 class="tp-home-title">Home-01</h3>
+                                    <h3 class="tp-home-title">Home-05</h3>
                                   </div>
                                 </a>
                               </div>
@@ -161,7 +162,7 @@
                   class="tp-header-right d-flex justify-content-end flex-wrap align-items-center"
                 >
                   <div class="tp-header-search d-none d-md-flex">
-                    <button>
+                    <button class="d-flex align-items-center tp-search-toogle">
                       <i class="flaticon-search"></i>
                     </button>
                   </div>
@@ -186,7 +187,7 @@
         </div>
       </div>
     </header>
-    <!-- ------header end------ -->
+    <!-- header end -->
 
     <!-- Search Bar -->
     <div class="tp-header-search-area d-flex align-items-center">
@@ -272,26 +273,25 @@
     <!-- Offcanvas-overlay Area -->
     <div class="tp-offcanvas-overlay"></div>
 
-    <!-- ------mainSection start------ -->
-
+    <!-- mainSection start -->
     <main>
       <!-- tp-hero-area start -->
       <section
         class="tp-hero-area tp-hero-space tp-black-bg pt-265 pb-170 p-relative"
         style="background-image: url(./assets/img/shape/vector-bg.png)"
       >
-        <!-- ------------Shape--------- -->
+        <!-- Shape -->
 
         <div class="tp-hero-shape">
           <img
             class="tp-hero-shape-1 p-absolute"
             src="./assets/img/shape/circle-big-1.png"
-            alt=""
+            alt="circle shape-1"
           />
           <img
             class="tp-hero-shape-2 p-absolute d-none d-xl-block"
             src="./assets/img/shape/shape-2.png"
-            alt=""
+            alt="circle shape-2"
           />
           <img
             class="tp-hero-shape-3 p-absolute"
@@ -328,20 +328,32 @@
 
         <div class="container">
           <div class="tp-hero p-relative z-index-5">
-            <h1 class="tp-hero-title">
+            <h1
+              class="tp-hero-title wow img-custom-anim-left"
+              data-wow-duration="1.5s"
+              data-wow-delay=".1s"
+            >
               best digital <br /><span class="tp-hero-span-1"
                 >creative agency</span
               >
             </h1>
-            <h1 class="tp-hero-title">
+            <h1
+              class="tp-hero-title wow img-custom-anim-right"
+              data-wow-duration="1.5s"
+              data-wow-delay=".3s"
+            >
               <span class="tp-hero-span-2"
                 >brilliant ideas <br />
                 for your brand</span
               >
               from canada
             </h1>
-            <div class="tp-hero-btn mt-50">
-              <a href="#" class="tp-btn-sec tp-btn-sec-lg">
+            <div
+              class="tp-hero-btn mt-50 wow img-custom-anim-top"
+              data-wow-duration="1.5s"
+              data-wow-delay=".9s"
+            >
+              <a href="about.html" class="tp-btn-sec tp-btn-sec-lg">
                 <span class="tp-btn-wrap">
                   <span class="tp-btn-y-1">Discover More</span>
                   <span class="tp-btn-y-2">Discover More</span>
@@ -380,7 +392,11 @@
         <div class="container p-relative z-index-11">
           <div class="row flex-column-reverse flex-md-row">
             <div class="col-md-6">
-              <div class="tp-about-img mb-100">
+              <div
+                class="tp-about-img mb-100 wow img-custom-anim-top"
+                data-wow-duration="1.5s"
+                data-wow-delay=".1s"
+              >
                 <img src="./assets/img/about/about-h-1.jpg" alt="" />
               </div>
               <div class="tp-about-video mb-100 pl-110">
@@ -421,7 +437,7 @@
                   </p>
                 </div>
                 <div class="tp-about-btn">
-                  <a href="#" class="tp-btn">
+                  <a href="about.html" class="tp-btn">
                     <span class="tp-btn-wrap">
                       <span class="tp-btn-y-1">About More</span>
                       <span class="tp-btn-y-2">About More</span>
@@ -430,7 +446,11 @@
                   </a>
                 </div>
               </div>
-              <div class="tp-about-img pl-42 mb-100">
+              <div
+                class="tp-about-img pl-42 mb-100 wow img-custom-anim-top"
+                data-wow-duration="1.5s"
+                data-wow-delay=".4s"
+              >
                 <img src="./assets/img/about/about-h-2.jpg" alt="" />
               </div>
             </div>
@@ -441,7 +461,9 @@
 
       <!-- tp-newsletter area start -->
       <section
-        class="tp-newsletter-area tp-newsletter-margin p-relative z-index-11"
+        class="tp-newsletter-area tp-newsletter-margin p-relative z-index-11 wow tpFadeInUp"
+        data-wow-duration="1.5s"
+        data-wow-delay=".2s"
       >
         <div class="container">
           <div class="tp-newsletter-bg tp-blue-bg">
@@ -491,13 +513,17 @@
           </div>
           <div class="row justify-content-center g-0">
             <div class="col-xl-3 col-lg-6 col-md-6">
-              <div class="tpservices br-24 mb-30">
+              <div
+                class="tpservices br-24 mb-30 wow tpFadeInUp"
+                data-wow-duration="1.5s"
+                data-wow-delay=".2s"
+              >
                 <div class="tpservices__icon mb-25">
                   <span><i class="flaticon-concentration"></i></span>
                 </div>
                 <div class="tpservices__text">
                   <h3 class="tpservices__title mb-15">
-                    <a href="#">Visual identity</a>
+                    <a href="service-details.html">Visual identity</a>
                   </h3>
                   <p>
                     Perfs ipsum ultrices sollicitudin iaculis platea facilisi
@@ -512,20 +538,24 @@
                   </div>
                 </div>
                 <div class="tpservices__btn mt-30">
-                  <a href="#" class="tp-sv-btn"
+                  <a href="service-details.html" class="tp-sv-btn"
                     >Read More <i class="fas fa-arrow-right"></i
                   ></a>
                 </div>
               </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6">
-              <div class="tpservices br-24 mb-30">
+              <div
+                class="tpservices br-24 mb-30 wow tpFadeInUp"
+                data-wow-duration="1.5s"
+                data-wow-delay=".4s"
+              >
                 <div class="tpservices__icon mb-25">
                   <span><i class="flaticon-sharing"></i></span>
                 </div>
                 <div class="tpservices__text">
                   <h3 class="tpservices__title mb-15">
-                    <a href="#">Branding design</a>
+                    <a href="service-details.html">Branding design</a>
                   </h3>
                   <p>
                     Perfs ipsum ultrices sollicitudin iaculis platea facilisi
@@ -540,20 +570,24 @@
                   </div>
                 </div>
                 <div class="tpservices__btn mt-30">
-                  <a href="#" class="tp-sv-btn"
+                  <a href="service-details.html" class="tp-sv-btn"
                     >Read More <i class="fas fa-arrow-right"></i
                   ></a>
                 </div>
               </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6">
-              <div class="tpservices br-24 mb-30">
+              <div
+                class="tpservices br-24 mb-30 wow tpFadeInUp"
+                data-wow-duration="1.5s"
+                data-wow-delay=".6s"
+              >
                 <div class="tpservices__icon mb-25">
                   <span><i class="flaticon-cooperation"></i></span>
                 </div>
                 <div class="tpservices__text">
                   <h3 class="tpservices__title mb-15">
-                    <a href="#">Creative solution</a>
+                    <a href="service-details.html">Creative solution</a>
                   </h3>
                   <p>
                     Perfs ipsum ultrices sollicitudin iaculis platea facilisi
@@ -568,20 +602,24 @@
                   </div>
                 </div>
                 <div class="tpservices__btn mt-30">
-                  <a href="#" class="tp-sv-btn"
+                  <a href="service-details.html" class="tp-sv-btn"
                     >Read More <i class="fas fa-arrow-right"></i
                   ></a>
                 </div>
               </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6">
-              <div class="tpservices br-24 mb-30">
+              <div
+                class="tpservices br-24 mb-30 wow tpFadeInUp"
+                data-wow-duration="1.5s"
+                data-wow-delay=".8s"
+              >
                 <div class="tpservices__icon mb-25">
                   <span><i class="flaticon-connections"></i></span>
                 </div>
                 <div class="tpservices__text">
                   <h3 class="tpservices__title mb-15">
-                    <a href="#">Content writing</a>
+                    <a href="service-details.html">Content writing</a>
                   </h3>
                   <p>
                     Perfs ipsum ultrices sollicitudin iaculis platea facilisi
@@ -596,7 +634,7 @@
                   </div>
                 </div>
                 <div class="tpservices__btn mt-30">
-                  <a href="#" class="tp-sv-btn"
+                  <a href="service-details.html" class="tp-sv-btn"
                     >Read More <i class="fas fa-arrow-right"></i
                   ></a>
                 </div>
@@ -608,7 +646,7 @@
       <!-- tp-servicesarea end -->
 
       <!-- project section started -->
-      <section
+      <div
         class="tp-project-tab-area tp-nblue-bg pt-130 pb-130 pr-100"
         data-background="./assets/img/bg/project-bg-1.png"
       >
@@ -695,7 +733,9 @@
                     tabindex="0"
                   >
                     <div class="tp-project-tab-thumb w-img">
-                      <a href="#"
+                      <a
+                        class="popup-img"
+                        href="./assets/img/thumb-photo/thumb-ph-1.png"
                         ><img
                           src="./assets/img/thumb-photo/thumb-ph-1.png"
                           alt=""
@@ -710,7 +750,9 @@
                     tabindex="0"
                   >
                     <div class="tp-project-tab-thumb w-img">
-                      <a href="#"
+                      <a
+                        class="popup-img"
+                        href="./assets/img/thumb-photo/thumb-ph-1.png"
                         ><img
                           src="./assets/img/thumb-photo/thumb-ph-1.png"
                           alt=""
@@ -726,7 +768,9 @@
                     tabindex="0"
                   >
                     <div class="tp-project-tab-thumb w-img">
-                      <a href="#"
+                      <a
+                        class="popup-img"
+                        href="./assets/img/thumb-photo/thumb-ph-1.png"
                         ><img
                           src="./assets/img/thumb-photo/thumb-ph-1.png"
                           alt=""
@@ -742,7 +786,9 @@
                     tabindex="0"
                   >
                     <div class="tp-project-tab-thumb w-img">
-                      <a href="#"
+                      <a
+                        class="popup-img"
+                        href="./assets/img/thumb-photo/thumb-ph-1.png"
                         ><img
                           src="./assets/img/thumb-photo/thumb-ph-1.png"
                           alt=""
@@ -758,7 +804,9 @@
                     tabindex="0"
                   >
                     <div class="tp-project-tab-thumb w-img">
-                      <a href="#"
+                      <a
+                        class="popup-img"
+                        href="./assets/img/thumb-photo/thumb-ph-1.png"
                         ><img
                           src="./assets/img/thumb-photo/thumb-ph-1.png"
                           alt=""
@@ -770,10 +818,10 @@
             </div>
           </div>
           <div class="tp-project-tab-btn text-center mt-80">
-            <a class="tp-btn-circle" href="#">All Project</a>
+            <a class="tp-btn-circle" href="portfolio.html">All Project</a>
           </div>
         </div>
-      </section>
+      </div>
       <!-- project section end -->
 
       <!-- testimonial area started -->
@@ -862,7 +910,7 @@
       <!-- testimonial area end -->
 
       <!-- brand area started -->
-      <section class="tp-brand">
+      <div class="tp-brand">
         <div class="tp-brand-area tp-yellow-bg pt-40 pb-40 mb-20">
           <div class="tp-brand-wrapper">
             <div class="swiper tp-brand-top-active">
@@ -990,7 +1038,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <!-- brand area ended -->
 
       <!-- team area started -->
@@ -1028,13 +1076,13 @@
               <div class="swiper-slide">
                 <div class="tpteam">
                   <div class="tpteam__thumb w-img">
-                    <a href="#"
+                    <a href="team-details.html"
                       ><img src="./assets/img/team/team-img-1.jpg" alt=""
                     /></a>
                   </div>
                   <div class="tpteam__info mt-30 ml-70">
                     <h3 class="tpteam__title">
-                      <a href="#">Bonnie Z. Brown</a>
+                      <a href="team-details.html">Bonnie Z. Brown</a>
                     </h3>
                     <span class="ml-40"><i></i>Senior Designer</span>
                     <div class="tpteam__social mt-20">
@@ -1048,13 +1096,13 @@
               <div class="swiper-slide">
                 <div class="tpteam">
                   <div class="tpteam__thumb w-img">
-                    <a href="#"
+                    <a href="team-details.html"
                       ><img src="./assets/img/team/team-img-2.jpg" alt=""
                     /></a>
                   </div>
                   <div class="tpteam__info mt-30 ml-70">
                     <h3 class="tpteam__title">
-                      <a href="#">Cynthia A. Keely</a>
+                      <a href="team-details.html">Cynthia A. Keely</a>
                     </h3>
                     <span class="ml-40"><i></i>Senior Designer</span>
                     <div class="tpteam__social mt-20">
@@ -1068,13 +1116,13 @@
               <div class="swiper-slide">
                 <div class="tpteam">
                   <div class="tpteam__thumb w-img">
-                    <a href="#"
+                    <a href="team-details.html"
                       ><img src="./assets/img/team/team-img-3.jpg" alt=""
                     /></a>
                   </div>
                   <div class="tpteam__info mt-30 ml-70">
                     <h3 class="tpteam__title">
-                      <a href="#">Donald D. Lowel</a>
+                      <a href="team-details.html">Donald D. Lowel</a>
                     </h3>
                     <span class="ml-40"><i></i>Senior Designer</span>
                     <div class="tpteam__social mt-20">
@@ -1088,13 +1136,13 @@
               <div class="swiper-slide">
                 <div class="tpteam">
                   <div class="tpteam__thumb w-img">
-                    <a href="#"
+                    <a href="team-details.html"
                       ><img src="./assets/img/team/team-img-4.jpg" alt=""
                     /></a>
                   </div>
                   <div class="tpteam__info mt-30 ml-70">
                     <h3 class="tpteam__title">
-                      <a href="#">Maria A. Murray</a>
+                      <a href="team-details.html">Maria A. Murray</a>
                     </h3>
                     <span class="ml-40"><i></i>Senior Designer</span>
                     <div class="tpteam__social mt-20">
@@ -1108,13 +1156,13 @@
               <div class="swiper-slide">
                 <div class="tpteam">
                   <div class="tpteam__thumb w-img">
-                    <a href="#"
+                    <a href="team-details.html"
                       ><img src="./assets/img/team/team-img-1.jpg" alt=""
                     /></a>
                   </div>
                   <div class="tpteam__info mt-30 ml-70">
                     <h3 class="tpteam__title">
-                      <a href="#">Bonnie Z. Brown</a>
+                      <a href="team-details.html">Bonnie Z. Brown</a>
                     </h3>
                     <span class="ml-40"><i></i>Senior Designer</span>
                     <div class="tpteam__social mt-20">
@@ -1128,13 +1176,13 @@
               <div class="swiper-slide">
                 <div class="tpteam">
                   <div class="tpteam__thumb w-img">
-                    <a href="#"
+                    <a href="team-details.html"
                       ><img src="./assets/img/team/team-img-2.jpg" alt=""
                     /></a>
                   </div>
                   <div class="tpteam__info mt-30 ml-70">
                     <h3 class="tpteam__title">
-                      <a href="#">Cynthia A. Keely</a>
+                      <a href="team-details.html">Cynthia A. Keely</a>
                     </h3>
                     <span class="ml-40"><i></i>Senior Designer</span>
                     <div class="tpteam__social mt-20">
@@ -1283,7 +1331,7 @@
             <div class="col-xl-4 col-lg-4 col-md-6">
               <div class="tpblog mb-50">
                 <div class="tpblog__thumb mb-35 w-img br-20">
-                  <a href="#"
+                  <a href="blog-details.html"
                     ><img src="./assets/img/blog/blog-img-1.png" alt=""
                   /></a>
                 </div>
@@ -1302,13 +1350,13 @@
                     >
                   </div>
                   <h3 class="tpblog__title mt-20 mb-20">
-                    <a href="#"
+                    <a href="blog-details.html"
                       >Potent be interdum ipsum pellentes code primis laoreet
                       diam per established</a
                     >
                   </h3>
                   <div class="tpblog__btn">
-                    <a class="tp-text-btn" href="#"
+                    <a class="tp-text-btn" href="blog-details.html"
                       >Read More <i class="fas fa-arrow-right"></i
                     ></a>
                   </div>
@@ -1318,7 +1366,7 @@
             <div class="col-xl-4 col-lg-4 col-md-6">
               <div class="tpblog mb-50">
                 <div class="tpblog__thumb mb-35 w-img br-20">
-                  <a href="#"
+                  <a href="blog-details.html"
                     ><img src="./assets/img/blog/blog-img-2.png" alt=""
                   /></a>
                 </div>
@@ -1337,13 +1385,13 @@
                     >
                   </div>
                   <h3 class="tpblog__title mt-20 mb-20">
-                    <a href="#"
+                    <a href="blog-details.html"
                       >Leos placerat sagittis vitae quisque scelerisque sociosqu
                       bulputate natoque</a
                     >
                   </h3>
                   <div class="tpblog__btn">
-                    <a class="tp-text-btn" href="#"
+                    <a class="tp-text-btn" href="blog-details.html"
                       >Read More <i class="fas fa-arrow-right"></i
                     ></a>
                   </div>
@@ -1353,7 +1401,7 @@
             <div class="col-xl-4 col-lg-4 col-md-6">
               <div class="tpblog mb-50">
                 <div class="tpblog__thumb mb-35 w-img br-20">
-                  <a href="#"
+                  <a href="blog-details.html"
                     ><img src="./assets/img/blog/blog-img-3.png" alt=""
                   /></a>
                 </div>
@@ -1372,13 +1420,13 @@
                     >
                   </div>
                   <h3 class="tpblog__title mt-20 mb-20">
-                    <a href="#"
+                    <a href="blog-details.html"
                       >Metus fames dictum curae tempus over parturient tempor
                       cubilia venenatis.</a
                     >
                   </h3>
                   <div class="tpblog__btn">
-                    <a class="tp-text-btn" href="#"
+                    <a class="tp-text-btn" href="blog-details.html"
                       >Read More <i class="fas fa-arrow-right"></i
                     ></a>
                   </div>
@@ -1412,17 +1460,22 @@
                     <div class="col-md-6 mb-30">
                       <input
                         type="email"
-                        name=""
-                        id=""
+                        name="email"
+                        id="#"
                         placeholder="Email Here*"
                       />
                     </div>
                     <div class="col-md-6 mb-30">
-                      <input type="text" name="" id="" placeholder="Subject*" />
+                      <input
+                        type="text"
+                        name="text"
+                        id="#"
+                        placeholder="Subject*"
+                      />
                     </div>
                     <div class="col-md-12 mb-45">
                       <textarea
-                        name=""
+                        name="text"
                         id="#"
                         cols="30"
                         rows="10"
@@ -1447,7 +1500,7 @@
       </div>
     </main>
 
-    <!-- ------mainSection end------ -->
+    <!-- mainSection end -->
 
     <!-- footerSection started -->
     <footer class="tp-theme-black-bg p-relative">
@@ -1516,9 +1569,9 @@
                   <li><a href="about.html">About us </a></li>
                   <li><a href="service.html">Services</a></li>
                   <li><a href="team.html">Meet the team</a></li>
-                  <li><a href="portfolio.html">Recent news </a></li>
-                  <li><a href="#">Our gallery </a></li>
-                  <li><a href="#">Case studies</a></li>
+                  <li><a href="blog.html">Recent news </a></li>
+                  <li><a href="portfolio.html">Our gallery </a></li>
+                  <li><a href="portfolio.html">Case studies</a></li>
                 </ul>
               </div>
             </div>
@@ -1536,7 +1589,7 @@
                   </div>
                   <div class="tp-footer-contact-item mb-20">
                     <span>Phone no</span>
-                    <h4><a href="tel:2 (520) 6320 32">2 (520) 6320 32</a></h4>
+                    <h4><a href="tel:2(520)632032">2 (520) 6320 32</a></h4>
                   </div>
                 </div>
               </div>
@@ -1558,9 +1611,9 @@
             <div class="col-xl-9 col-lg-8">
               <div class="tp-footer-menu mb-30 text-md-center text-lg-end">
                 <ul>
-                  <li><a href="">career </a></li>
+                  <li><a href="#">career </a></li>
                   <li><a href="faq.html">our FAq</a></li>
-                  <li><a href="">privacy & policy </a></li>
+                  <li><a href="#">privacy & policy </a></li>
                   <li><a href="contact.html">contact</a></li>
                 </ul>
               </div>
@@ -1576,6 +1629,7 @@
     <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/wow.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

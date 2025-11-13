@@ -15,7 +15,8 @@
     <!-- ------header start------ -->
     <header>
       <div
-        class="tp-header-area tp-header-space tp-header-space-3 tp-transparent-header pl-100 pr-100 tp-header-border"
+        id="tp-header-sticky"
+        class="tp-header-area tp-header-space tp-header-space-3 tp-transparent-header pl-100 pr-100 tp-header-border tp-header-3"
       >
         <div class="container-fluid p-0">
           <div class="row gx-0 align-items-center">
@@ -34,20 +35,124 @@
                 <div class="tp-main-menu tp-main-menu-black d-none d-xl-block">
                   <nav class="tp-mobile-menu-active">
                     <ul>
+                      <li class="has-dropdown">
+                        <a href="index.html">Home</a>
+                        <div class="tp-mega-menu">
+                          <div class="tp-home-menu">
+                            <div
+                              class="row gx-4 row-cols-2 row-cols-md-2 row-cols-xl-5"
+                            >
+                              <div class="col mb-25">
+                                <a href="index.html">
+                                  <div class="tp-home-thumb w-img">
+                                    <img
+                                      src="./assets/img/demo/home-1.jpeg"
+                                      alt=""
+                                    />
+                                    <h3 class="tp-home-title">Home-01</h3>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col mb-25">
+                                <a href="index-2.html">
+                                  <div class="tp-home-thumb w-img">
+                                    <img
+                                      src="./assets/img/demo/home-2.jpeg"
+                                      alt=""
+                                    />
+                                    <h3 class="tp-home-title">Home-02</h3>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col mb-25">
+                                <a href="index-3.html">
+                                  <div class="tp-home-thumb w-img">
+                                    <img
+                                      src="./assets/img/demo/home-3.jpeg"
+                                      alt=""
+                                    />
+                                    <h3 class="tp-home-title">Home-03</h3>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col mb-25">
+                                <a href="index-4.html">
+                                  <div class="tp-home-thumb w-img">
+                                    <img
+                                      src="./assets/img/demo/home-4.jpeg"
+                                      alt=""
+                                    />
+                                    <h3 class="tp-home-title">Home-04</h3>
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="col mb-25">
+                                <a href="index-5.html">
+                                  <div class="tp-home-thumb w-img">
+                                    <img
+                                      src="./assets/img/demo/home-5.jpeg"
+                                      alt=""
+                                    />
+                                    <h3 class="tp-home-title">Home-05</h3>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li><a href="about.html">About Us</a></li>
                       <li>
-                        <a href="#">Home</a>
+                        <a href="service.html">Service</a>
                         <ul class="sub-menu">
-                          <li><a href="#">home-1</a></li>
-                          <li><a href="#">home-2</a></li>
-                          <li><a href="#">home-3</a></li>
-                          <li><a href="#">home-4</a></li>
+                          <li><a href="service.html">Service</a></li>
+                          <li>
+                            <a href="service-details.html">Service Details</a>
+                          </li>
                         </ul>
                       </li>
-                      <li><a href="#">About Us</a></li>
-                      <li><a href="#">Service</a></li>
-                      <li><a href="#">Portfolio</a></li>
-                      <li><a href="#">Pages</a></li>
-                      <li><a href="#">Blog</a></li>
+                      <li>
+                        <a href="portfolio.html">Portfolio</a>
+                        <ul class="sub-menu">
+                          <li><a href="portfolio.html">Portfolio</a></li>
+                          <li>
+                            <a href="portfolio-details.html"
+                              >Portfolio Details</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="has-dropdown">
+                        <a href="#">Pages</a>
+                        <ul class="sub-menu">
+                          <li><a href="about.html">About</a></li>
+                          <li><a href="service.html">Service</a></li>
+                          <li>
+                            <a href="service-details.html">Service Details</a>
+                          </li>
+                          <li><a href="portfolio.html">Portfolio</a></li>
+                          <li>
+                            <a href="portfolio-details.html"
+                              >Portfolio Details</a
+                            >
+                          </li>
+                          <li><a href="blog.html">Blog</a></li>
+                          <li><a href="blog-details.html">Blog Details</a></li>
+                          <li><a href="faq.html">FAQ</a></li>
+                          <li><a href="pricing.html">Pricing</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                          <li><a href="team.html">Team</a></li>
+                          <li><a href="team-details.html">Team Details</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="blog.html">Blog</a>
+                        <ul class="sub-menu">
+                          <li><a href="blog.html">Blog</a></li>
+                          <li><a href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="contact.html">Contact</a></li>
                     </ul>
                   </nav>
                 </div>
@@ -61,7 +166,7 @@
                 <div
                   class="tp-header-search d-none d-md-flex align-items-center"
                 >
-                  <button>
+                  <button class="d-flex align-items-center tp-search-toogle">
                     <i class="flaticon-search"></i>
                   </button>
                 </div>
@@ -79,6 +184,28 @@
       </div>
     </header>
     <!-- ------header end------ -->
+
+    <!-- Search Bar -->
+    <div class="tp-header-search-area d-flex align-items-center">
+      <button class="tp-search-close">×</button>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="tp-search-bar text-center">
+              <h2 class="tp-search-bar-title mb-30">
+                What are you looking for?
+              </h2>
+              <div class="contact-form-box contact-form-search-box">
+                <form action="#">
+                  <input type="email" placeholder="Enter Your Keywords..." />
+                  <button type="submit"><i class="flaticon-search"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ------offcanvas start------ -->
     <div class="tp-offcanvas">
@@ -192,7 +319,7 @@
                       Waters fly beast and stars don't void first Creature midst
                       itself let said fowl man divide which called. Open.
                     </p>
-                    <a class="tp-text-btn" href="#"
+                    <a class="tp-text-btn" href="about.html"
                       >Read More <i class="fas fa-arrow-right"></i
                     ></a>
                   </div>
@@ -234,7 +361,7 @@
                     </div>
                     <div class="tpservices__text">
                       <h3 class="tpservices__title mb-15">
-                        <a href="#">Brand Strategy</a>
+                        <a href="service-details.html">Brand Strategy</a>
                       </h3>
                       <p>
                         Perfs ipsum ultrices sollicitudin iaculis platea
@@ -242,7 +369,9 @@
                       </p>
 
                       <div class="tpservices__btn-next">
-                        <a href="#"><i class="flaticon-next-button"></i></a>
+                        <a href="service-details.html"
+                          ><i class="flaticon-next-button"></i
+                        ></a>
                       </div>
                     </div>
                   </div>
@@ -260,7 +389,7 @@
                     </div>
                     <div class="tpservices__text">
                       <h3 class="tpservices__title mb-15">
-                        <a href="#">Product Design</a>
+                        <a href="service-details.html">Product Design</a>
                       </h3>
                       <p>
                         Perfs ipsum ultrices sollicitudin iaculis platea
@@ -268,7 +397,9 @@
                       </p>
 
                       <div class="tpservices__btn-next">
-                        <a href="#"><i class="flaticon-next-button"></i></a>
+                        <a href="service-details.html"
+                          ><i class="flaticon-next-button"></i
+                        ></a>
                       </div>
                     </div>
                   </div>
@@ -286,7 +417,7 @@
                     </div>
                     <div class="tpservices__text">
                       <h3 class="tpservices__title mb-15">
-                        <a href="#">Content Writing</a>
+                        <a href="service-details.html">Content Writing</a>
                       </h3>
                       <p>
                         Perfs ipsum ultrices sollicitudin iaculis platea
@@ -294,7 +425,9 @@
                       </p>
 
                       <div class="tpservices__btn-next">
-                        <a href="#"><i class="flaticon-next-button"></i></a>
+                        <a href="service-details.html"
+                          ><i class="flaticon-next-button"></i
+                        ></a>
                       </div>
                     </div>
                   </div>
@@ -312,7 +445,7 @@
                     </div>
                     <div class="tpservices__text">
                       <h3 class="tpservices__title mb-15">
-                        <a href="#">Art Direction</a>
+                        <a href="service-details.html">Art Direction</a>
                       </h3>
                       <p>
                         Perfs ipsum ultrices sollicitudin iaculis platea
@@ -320,7 +453,9 @@
                       </p>
 
                       <div class="tpservices__btn-next">
-                        <a href="#"><i class="flaticon-next-button"></i></a>
+                        <a href="service-details.html"
+                          ><i class="flaticon-next-button"></i
+                        ></a>
                       </div>
                     </div>
                   </div>
@@ -470,7 +605,7 @@
                 </div>
               </div>
               <div class="tp-about-btn mt-50 mb-50">
-                <a href="#" class="tp-btn-orange">
+                <a href="about.html" class="tp-btn-orange">
                   <span class="tp-btn-orange-wrap">
                     <span class="tp-btn-y-1">Discover More</span>
                     <span class="tp-btn-y-2">Discover More</span>
@@ -664,16 +799,21 @@
                   <span>Branding</span>
                 </div>
                 <h3 class="tpshowcase__title text-upper mb-35">
-                  <a href="#">Experience Digital Marketing Craftsmanship</a>
+                  <a href="portfolio-details.html"
+                    >Experience Digital Marketing Craftsmanship</a
+                  >
                 </h3>
                 <div class="tpshowcase__btn">
-                  <a class="tp-text-btn tp-text-btn-white" href="#"
+                  <a
+                    class="tp-text-btn tp-text-btn-white"
+                    href="portfolio-details.html"
                     >Project Details <i class="fas fa-arrow-right"></i
                   ></a>
                 </div>
               </div>
             </div>
           </div>
+
           <div
             class="row showcase-row-item g-0 align-items-center flex-column-reverse flex-lg-row"
           >
@@ -686,14 +826,16 @@
                   <span>Branding</span>
                 </div>
                 <h3 class="tpshowcase__title text-upper mb-35">
-                  <a href="#"
+                  <a href="portfolio-details.html"
                     >creative Mobile <br />
                     app design for the <br />
                     molto bene</a
                   >
                 </h3>
                 <div class="tpshowcase__btn">
-                  <a class="tp-text-btn tp-text-btn-white" href="#"
+                  <a
+                    class="tp-text-btn tp-text-btn-white"
+                    href="portfolio-details.html"
                     >Project Details <i class="fas fa-arrow-right"></i
                   ></a>
                 </div>
@@ -705,6 +847,7 @@
               </div>
             </div>
           </div>
+
           <div class="row showcase-row-item g-0 align-items-center">
             <div class="col-lg-6">
               <div class="tpshowcase__thumb w-img br-20">
@@ -720,14 +863,16 @@
                   <span>Branding</span>
                 </div>
                 <h3 class="tpshowcase__title text-upper mb-35">
-                  <a href="#"
+                  <a href="portfolio-details.html"
                     >Powerhouse of <br />
                     Digital Marketing <br />
                     best Solutions</a
                   >
                 </h3>
                 <div class="tpshowcase__btn">
-                  <a class="tp-text-btn tp-text-btn-white" href="#"
+                  <a
+                    class="tp-text-btn tp-text-btn-white"
+                    href="portfolio-details.html"
                     >Project Details <i class="fas fa-arrow-right"></i
                   ></a>
                 </div>
@@ -790,7 +935,7 @@
                   </li>
                 </ul>
                 <div class="tpprice__btn mt-50">
-                  <a href="#" class="tp-btn-orange">
+                  <a href="contact.html" class="tp-btn-orange">
                     <span class="tp-btn-orange-wrap">
                       <span class="tp-btn-y-1">Choose a Plan</span>
                       <span class="tp-btn-y-2">Choose a Plan</span>
@@ -840,7 +985,7 @@
                   </li>
                 </ul>
                 <div class="tpprice__btn mt-50">
-                  <a href="#" class="tp-btn-orange">
+                  <a href="contact.html" class="tp-btn-orange">
                     <span class="tp-btn-orange-wrap">
                       <span class="tp-btn-y-1">Choose a Plan</span>
                       <span class="tp-btn-y-2">Choose a Plan</span>
@@ -890,7 +1035,7 @@
                   </li>
                 </ul>
                 <div class="tpprice__btn mt-50">
-                  <a href="#" class="tp-btn-orange">
+                  <a href="contact.html" class="tp-btn-orange">
                     <span class="tp-btn-orange-wrap">
                       <span class="tp-btn-y-1">Choose a Plan</span>
                       <span class="tp-btn-y-2">Choose a Plan</span>
@@ -1123,7 +1268,7 @@
               </div>
 
               <div class="tpprice__btn mt-20">
-                <a href="#" class="tp-btn-orange">
+                <a href="contact.html" class="tp-btn-orange">
                   <span class="tp-btn-orange-wrap">
                     <span class="tp-btn-y-1">Discover More</span>
                     <span class="tp-btn-y-2">Discover More</span>
@@ -1200,12 +1345,12 @@
                   Quick Links
                 </h3>
                 <ul>
-                  <li><a href="#">About us </a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Meet the team</a></li>
-                  <li><a href="#">Recent news </a></li>
-                  <li><a href="#">Our gallery </a></li>
-                  <li><a href="#">Case studies</a></li>
+                  <li><a href="about.html">About us </a></li>
+                  <li><a href="service.html">Services</a></li>
+                  <li><a href="team.html">Meet the team</a></li>
+                  <li><a href="blog.html">Recent news </a></li>
+                  <li><a href="portfolio.html">Our gallery </a></li>
+                  <li><a href="portfolio.html">Case studies</a></li>
                 </ul>
               </div>
             </div>
@@ -1230,7 +1375,7 @@
                   </div>
                   <div class="tp-footer-contact-item mb-20">
                     <span>Phone no</span>
-                    <h4><a href="tel:2 (520) 6320 32">2 (520) 6320 32</a></h4>
+                    <h4><a href="tel:2(520)632032">2 (520) 6320 32</a></h4>
                   </div>
                 </div>
               </div>
@@ -1296,9 +1441,9 @@
                 class="tp-footer-menu tp-footer-menu-2 mb-30 text-md-center text-lg-end"
               >
                 <ul>
-                  <li><a href="">career </a></li>
+                  <li><a href="#">career </a></li>
                   <li><a href="">privacy & policy </a></li>
-                  <li><a href="">contact</a></li>
+                  <li><a href="contact.html">contact</a></li>
                 </ul>
               </div>
             </div>
